@@ -1,0 +1,21 @@
+﻿@model IEnumerable<mainDBEntities.SystemUser>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<table>
+    <tr>
+        <th>
+            @//Html.DisplayNameFor(model => model.Role)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @//Html.DisplayFor(modelItem => item.Role)
+            </td>
+        }
+    </tr>
+</table>

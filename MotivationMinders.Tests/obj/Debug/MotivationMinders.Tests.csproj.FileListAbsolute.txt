@@ -1,0 +1,89 @@
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\MotivationMinders.Tests.dll.config
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\MotivationMinders.Tests.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\MotivationMinders.Tests.pdb
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\MotivationMinders.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Newtonsoft.Json.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Helpers.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Mvc.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Razor.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Optimization.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Owin.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\EntityFramework.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\MotivationMinders.pdb
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Newtonsoft.Json.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Helpers.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Mvc.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Razor.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Optimization.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\EntityFramework.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\obj\Debug\MotivationMinders.Tests.csprojResolveAssemblyReference.cache
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\obj\Debug\MotivationMinders.Tests.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders.Tests\obj\Debug\MotivationMinders.Tests.pdb
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\MotivationMinders.Tests.dll.config
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\MotivationMinders.Tests.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\MotivationMinders.Tests.pdb
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\MotivationMinders.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Newtonsoft.Json.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Helpers.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Mvc.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Razor.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\EntityFramework.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Optimization.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Owin.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\SimpleCrypto.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\MotivationMinders.pdb
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Newtonsoft.Json.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Helpers.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Mvc.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Razor.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\EntityFramework.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\System.Web.Optimization.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\obj\Debug\MotivationMinders.Tests.csprojResolveAssemblyReference.cache
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\obj\Debug\MotivationMinders.Tests.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders.Tests\obj\Debug\MotivationMinders.Tests.pdb

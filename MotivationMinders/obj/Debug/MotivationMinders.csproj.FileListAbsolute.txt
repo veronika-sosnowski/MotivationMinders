@@ -1,0 +1,165 @@
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\MotivationMinders.dll.config
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\MotivationMinders.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\MotivationMinders.pdb
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Antlr3.Runtime.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\EntityFramework.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\EntityFramework.SqlServer.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Core.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Owin.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Cookies.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Facebook.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Google.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.OAuth.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Twitter.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Web.Infrastructure.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Newtonsoft.Json.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Owin.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.Helpers.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.Mvc.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.Optimization.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.Razor.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Deployment.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Razor.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\WebGrease.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.Helpers.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.Mvc.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.Optimization.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.Razor.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Deployment.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Razor.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Antlr3.Runtime.pdb
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Newtonsoft.Json.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\EntityFramework.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\EntityFramework.SqlServer.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Core.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Owin.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Facebook.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Cookies.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.OAuth.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Google.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Twitter.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.dll
+\\Fs03d\stu5\Home\Vsosnowski-cc\CAPSTONE\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.pdb
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\MotivationMinders.dll.config
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\MotivationMinders.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\MotivationMinders.pdb
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Antlr3.Runtime.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\EntityFramework.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\EntityFramework.SqlServer.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Newtonsoft.Json.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Owin.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.Helpers.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.Mvc.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.Optimization.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.Razor.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Deployment.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Razor.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\WebGrease.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.Helpers.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.Mvc.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.Optimization.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.Razor.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Deployment.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Razor.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Antlr3.Runtime.pdb
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Newtonsoft.Json.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\EntityFramework.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\EntityFramework.SqlServer.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.csprojResolveAssemblyReference.cache
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.dll
+C:\Users\lqhillier-cc\Desktop\MotivationMinders\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.pdb
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\MotivationMinders.dll.config
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\MotivationMinders.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\MotivationMinders.pdb
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Antlr3.Runtime.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\EntityFramework.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\EntityFramework.SqlServer.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Core.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Cookies.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Facebook.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Google.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.OAuth.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Twitter.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Web.Infrastructure.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Newtonsoft.Json.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Owin.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\SimpleCrypto.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.Helpers.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.Mvc.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.Optimization.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.Razor.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Deployment.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Razor.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\WebGrease.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.Helpers.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.Mvc.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.Optimization.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.Razor.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Deployment.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\System.Web.WebPages.Razor.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Antlr3.Runtime.pdb
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Newtonsoft.Json.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\EntityFramework.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\EntityFramework.SqlServer.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Core.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Facebook.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Cookies.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.OAuth.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Google.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Twitter.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.dll
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.pdb
+G:\Visual Studio 2013\Projects\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.csprojResolveAssemblyReference.cache
