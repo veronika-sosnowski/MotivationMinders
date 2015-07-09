@@ -30,7 +30,6 @@
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="type" ColumnName="type" />
           <ScalarProperty Name="description" ColumnName="description" />
-          <ScalarProperty Name="meaning" ColumnName="meaning" />
           <ScalarProperty Name="price" ColumnName="price" />
         </MappingFragment>
       </EntityTypeMapping>

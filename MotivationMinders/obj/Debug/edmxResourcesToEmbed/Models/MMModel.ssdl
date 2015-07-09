@@ -28,7 +28,6 @@
     <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="description" Type="nvarchar" MaxLength="150" />
-    <Property Name="meaning" Type="nvarchar" MaxLength="50" />
     <Property Name="price" Type="money" Nullable="false" />
   </EntityType>
   <EntityType Name="ProductTags">

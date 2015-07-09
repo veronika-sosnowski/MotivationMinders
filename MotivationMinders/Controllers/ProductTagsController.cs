@@ -17,7 +17,24 @@ namespace MotivationMinders.Controllers
         // GET: ProductTags
         public ActionResult Index()
         {
-            var productTags = db.ProductTags.Include(p => p.product);
+            string productID = "";
+            if (Request.QueryString["productID"] != null)
+            {
+                productID = Request.QueryString["productID"];
+                Response.Cookies.Add(new HttpCookie("productID", Request.QueryString["productID"]));
+            }
+            else
+            {
+                if (Request.Cookies["productID"] == null)
+                    Response.Redirect("/Products/Index");
+                else
+                    productID = Request.Cookies["productID"].Value;
+            }
+            ViewBag.productID = productID;
+            int prodID;
+            prodID = int.Parse(productID);
+            var productTags = db.ProductTags.Where(a => a.productId == prodID)
+                .Include(p => p.product);
             return View(productTags.ToList());
         }
 
@@ -39,6 +56,7 @@ namespace MotivationMinders.Controllers
         // GET: ProductTags/Create
         public ActionResult Create()
         {
+            string productID = Request.Cookies["productID"].Value;
             ViewBag.productId = new SelectList(db.products, "productID", "name");
             return View();
         }
@@ -52,6 +70,7 @@ namespace MotivationMinders.Controllers
         {
             if (ModelState.IsValid)
             {
+                productTag.productId = int.Parse(Request.Cookies["productID"].Value);
                 db.ProductTags.Add(productTag);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -86,6 +105,7 @@ namespace MotivationMinders.Controllers
         {
             if (ModelState.IsValid)
             {
+                productTag.productId = int.Parse(Request.Cookies["productID"].Value);
                 db.Entry(productTag).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

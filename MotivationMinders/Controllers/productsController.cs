@@ -17,20 +17,9 @@ namespace MotivationMinders.Controllers
         // GET: products
         public ActionResult Index()
         {
-
+            //I AM MAKING A CHANGE.
             return View(db.products.ToList());
         }
-
-        //public ActionResult SelectType()
-        //{
-        //    List<SelectListItem> type = new List<SelectListItem>();
-        //    type.Add(new SelectListItem { Text = "Locket", Value = "Locket" });
-        //    type.Add(new SelectListItem { Text = "Dangle", Value = "Dangle" });
-        //    type.Add(new SelectListItem { Text = "Charm", Value = "Charm" });
-        //    type.Add(new SelectListItem { Text = "Decoration", Value = "Decoration" });
-        //    ViewBag.ProductType = type;
-        //    return View();
-        //}
 
         // GET: products/Details/5
         public ActionResult Details(int? id)
@@ -50,12 +39,6 @@ namespace MotivationMinders.Controllers
         // GET: products/Create
         public ActionResult Create()
         {
-            List<string> ProductType = new List<string>();
-            ProductType.Add("Locket");
-            ProductType.Add("Dangle");
-            ProductType.Add("Charm");
-            ProductType.Add("Decoration");
-            ViewBag.ProductType = ProductType;
             return View();
         }
 
@@ -64,7 +47,7 @@ namespace MotivationMinders.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "productID,name,type,description,meaning,price")] product product)
+        public ActionResult Create([Bind(Include = "productID,name,type,description,price")] product product)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +79,7 @@ namespace MotivationMinders.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Tags([Bind(Include = "productID,name,type,description,meaning,price")] product product)
+        public ActionResult Tags([Bind(Include = "productID,name,type,description,price")] product product)
         {
             if (ModelState.IsValid)
             {

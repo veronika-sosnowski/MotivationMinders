@@ -29,7 +29,6 @@
     <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="description" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
-    <Property Name="meaning" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
     <NavigationProperty Name="ProductImages" Relationship="Self.FK__ProductIm__produ__44FF419A" FromRole="products" ToRole="ProductImages" />
     <NavigationProperty Name="ProductTags" Relationship="Self.FK__ProductTa__produ__4222D4EF" FromRole="products" ToRole="ProductTags" />
