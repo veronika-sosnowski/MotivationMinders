@@ -163,48 +163,54 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="charm.cs">
-      <DependentUpon>maindbEntities.tt</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\productsController.cs" />
+    <Compile Include="Controllers\ProductTagsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="maindbEntities.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>maindbEntities.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="maindbEntities.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>maindbEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="maindbEntities.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>maindbEntities.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\charm.cs">
+      <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MMModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MMModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MMModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MMModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MMModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\product.cs">
+      <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductImage.cs">
+      <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ProductTag.cs">
+      <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Supplier.cs">
+      <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SystemUser.cs">
+      <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="product.cs">
-      <DependentUpon>maindbEntities.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Role.cs">
-      <DependentUpon>maindbEntities.tt</DependentUpon>
-    </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="Supplier.cs">
-      <DependentUpon>maindbEntities.tt</DependentUpon>
-    </Compile>
-    <Compile Include="SystemUser.cs">
-      <DependentUpon>maindbEntities.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\mainDB.mdf" />
@@ -235,22 +241,22 @@
     <Content Include="images\testlogo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="maindbEntities.edmx">
+    <EntityDeploy Include="Models\MMModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>maindbEntities.Designer.cs</LastGenOutput>
+      <LastGenOutput>MMModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="maindbEntities.Context.tt">
+    <Content Include="Models\MMModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>maindbEntities.edmx</DependentUpon>
-      <LastGenOutput>maindbEntities.Context.cs</LastGenOutput>
+      <DependentUpon>MMModel.edmx</DependentUpon>
+      <LastGenOutput>MMModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="maindbEntities.edmx.diagram">
-      <DependentUpon>maindbEntities.edmx</DependentUpon>
+    <Content Include="Models\MMModel.edmx.diagram">
+      <DependentUpon>MMModel.edmx</DependentUpon>
     </Content>
-    <Content Include="maindbEntities.tt">
+    <Content Include="Models\MMModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>maindbEntities.edmx</DependentUpon>
-      <LastGenOutput>maindbEntities.cs</LastGenOutput>
+      <DependentUpon>MMModel.edmx</DependentUpon>
+      <LastGenOutput>MMModel.cs</LastGenOutput>
     </Content>
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
@@ -295,18 +301,18 @@
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Admin\Delete.cshtml" />
-    <Content Include="Views\Admin\Details.cshtml" />
-    <Content Include="Views\Admin\Edit.cshtml" />
-    <Content Include="Views\Admin\Index.cshtml" />
     <None Include="Views\Home\Catalogue.cshtml" />
     <Content Include="Views\Home\Product.cshtml" />
-    <Content Include="Views\User\EditUser.cshtml" />
-    <Content Include="Views\User\ForgotPassword.cshtml" />
-    <Content Include="Views\User\Index.cshtml" />
-    <Content Include="Views\User\LogIn.cshtml" />
-    <Content Include="Views\User\LogOut.cshtml" />
-    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\products\Create.cshtml" />
+    <Content Include="Views\products\Delete.cshtml" />
+    <Content Include="Views\products\Details.cshtml" />
+    <Content Include="Views\products\Edit.cshtml" />
+    <Content Include="Views\products\Index.cshtml" />
+    <Content Include="Views\ProductTags\Create.cshtml" />
+    <Content Include="Views\ProductTags\Delete.cshtml" />
+    <Content Include="Views\ProductTags\Details.cshtml" />
+    <Content Include="Views\ProductTags\Edit.cshtml" />
+    <Content Include="Views\ProductTags\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

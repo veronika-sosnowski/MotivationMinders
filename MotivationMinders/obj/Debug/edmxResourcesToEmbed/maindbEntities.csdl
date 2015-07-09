@@ -21,5 +21,41 @@
   <EntityContainer Name="mainDBEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Roles" EntityType="Self.Role" />
     <EntitySet Name="SystemUsers" EntityType="Self.SystemUser" />
+    <EntitySet Name="charms" EntityType="mainDBModel.charm" />
+    <EntitySet Name="products" EntityType="mainDBModel.product" />
+    <EntitySet Name="Suppliers" EntityType="mainDBModel.Supplier" />
   </EntityContainer>
+  <EntityType Name="charm">
+    <Key>
+      <PropertyRef Name="CharmID" />
+    </Key>
+    <Property Name="CharmID" Type="Int32" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="organization" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="supplierName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="meaning" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="tags" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="supplierID" />
+    </Key>
+    <Property Name="supplierID" Type="Int32" Nullable="false" />
+    <Property Name="supplierName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="contactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="contactName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="postalCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

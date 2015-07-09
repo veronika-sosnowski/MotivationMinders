@@ -1,5 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="mainDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="charm">
+    <Key>
+      <PropertyRef Name="CharmID" />
+    </Key>
+    <Property Name="CharmID" Type="int" Nullable="false" />
+    <Property Name="description" Type="varchar(max)" />
+    <Property Name="price" Type="money" />
+    <Property Name="organization" Type="varchar(max)" />
+    <Property Name="supplierName" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="products">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="meaning" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="tags" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="price" Type="money" Nullable="false" />
+  </EntityType>
   <EntityType Name="Roles">
     <Key>
       <PropertyRef Name="RoleId" />
@@ -7,6 +29,17 @@
     <Property Name="RoleId" Type="int" Nullable="false" />
     <Property Name="Rolename" Type="nvarchar" MaxLength="50" />
     <Property Name="Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="supplierID" />
+    </Key>
+    <Property Name="supplierID" Type="int" Nullable="false" />
+    <Property Name="supplierName" Type="nvarchar" MaxLength="50" />
+    <Property Name="contactNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="contactName" Type="nvarchar" MaxLength="50" />
+    <Property Name="location" Type="nvarchar" MaxLength="50" />
+    <Property Name="postalCode" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="SystemUser">
     <Key>
@@ -19,7 +52,10 @@
     <Property Name="Role" Type="int" />
   </EntityType>
   <EntityContainer Name="mainDBModelStoreContainer">
+    <EntitySet Name="charm" EntityType="Self.charm" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="products" EntityType="Self.products" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SystemUser" EntityType="Self.SystemUser" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>
