@@ -16,9 +16,9 @@
     </Key>
     <Property Name="productImageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="productID" Type="int" Nullable="false" />
-    <Property Name="image" Type="image" Nullable="false" />
-    <Property Name="filename" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="filetype" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="image" Type="varbinary(max)" Nullable="false" />
+    <Property Name="filename" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ImageSize" Type="int" />
   </EntityType>
   <EntityType Name="products">
     <Key>
@@ -28,7 +28,7 @@
     <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="description" Type="nvarchar" MaxLength="150" />
-    <Property Name="price" Type="money" Nullable="false" />
+    <Property Name="price" Type="money" />
   </EntityType>
   <EntityType Name="ProductTags">
     <Key>
