@@ -123,5 +123,12 @@ namespace MotivationMinders.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Search(string query)
+        {
+            /*MMEntitiesContext db = new MMEntitiesContext();*/
+            var productList = db.products.Where(a => a.name.Contains(query));
+            return View(productList);
+        }
     }
 }
