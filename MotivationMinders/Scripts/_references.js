@@ -6,3 +6,5 @@
 /// <reference path="modernizr-2.6.2.js" />
 /// <reference path="npm.js" />
 /// <reference path="respond.js" />
+/// <reference path="jquery-1.5.min.js" />
+/// <reference path="jquery-ui-1.8.9.custom.min.js" />
