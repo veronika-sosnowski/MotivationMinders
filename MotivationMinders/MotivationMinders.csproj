@@ -313,6 +313,7 @@
     <Content Include="Views\ProductTags\Details.cshtml" />
     <Content Include="Views\ProductTags\Edit.cshtml" />
     <Content Include="Views\ProductTags\Index.cshtml" />
+    <Content Include="Views\products\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
