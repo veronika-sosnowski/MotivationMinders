@@ -79,13 +79,13 @@ namespace MotivationMinders.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Tags([Bind(Include = "productID,name,type,description,price")] product product)
+        public ActionResult Edit([Bind(Include = "productID,name,type,description,price")] product product)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(product).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Tags");
+                return RedirectToAction("Index");
             }
             return View(product);
         }
