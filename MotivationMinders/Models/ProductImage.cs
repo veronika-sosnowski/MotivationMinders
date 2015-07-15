@@ -11,8 +11,6 @@ namespace MotivationMinders.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.Web;
     
     public partial class ProductImage
     {
@@ -20,10 +18,8 @@ namespace MotivationMinders.Models
         public int productID { get; set; }
         public byte[] image { get; set; }
         public string filename { get; set; }
-        public Nullable<int> ImageSize { get; set; }
-        [Required(ErrorMessage = "Please select an image file")]
-        public HttpPostedFileBase File { get; set; }
-    //
+        public string filetype { get; set; }
+    
         public virtual product product { get; set; }
     }
 }

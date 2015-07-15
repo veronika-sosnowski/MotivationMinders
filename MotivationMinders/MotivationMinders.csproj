@@ -231,12 +231,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Icon.png" />
+    <Content Include="images\CharmsDemo\charm1.png" />
+    <Content Include="images\CharmsDemo\charm10.png" />
+    <Content Include="images\CharmsDemo\charm2.png" />
+    <Content Include="images\CharmsDemo\charm3.png" />
+    <Content Include="images\CharmsDemo\charm4.png" />
+    <Content Include="images\CharmsDemo\charm5.png" />
+    <Content Include="images\CharmsDemo\charm6.png" />
+    <Content Include="images\CharmsDemo\charm7.png" />
+    <Content Include="images\CharmsDemo\charm8.png" />
+    <Content Include="images\CharmsDemo\charm9.png" />
     <Content Include="images\lockets-edit.jpg" />
     <Content Include="images\lockets-full.jpg" />
     <Content Include="images\lockets-header.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\MM.png" />
     <Content Include="images\motivation_miners_biggerfont.jpg" />
+    <Content Include="images\testbg.png" />
     <Content Include="images\testlogo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -258,10 +270,12 @@
       <LastGenOutput>MMModel.cs</LastGenOutput>
     </Content>
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\jquery-1.5.min.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.9.custom.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -300,6 +314,7 @@
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Build.cshtml" />
     <None Include="Views\Home\Catalogue.cshtml" />
     <Content Include="Views\Home\Product.cshtml" />
     <Content Include="Views\products\Create.cshtml" />
@@ -312,8 +327,7 @@
     <Content Include="Views\ProductTags\Details.cshtml" />
     <Content Include="Views\ProductTags\Edit.cshtml" />
     <Content Include="Views\ProductTags\Index.cshtml" />
-    <Content Include="Views\products\Upload.cshtml" />
-    <Content Include="Views\products\Gallery.cshtml" />
+    <Content Include="Views\products\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -322,7 +336,6 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

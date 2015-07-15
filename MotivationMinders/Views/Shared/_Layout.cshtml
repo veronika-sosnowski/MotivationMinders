@@ -21,6 +21,55 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+    <!-- Pink Button CSS -->
+    <style>
+        .btn-sample {
+            color: #ffffff;
+            background-color: #CA609A;
+            border-color: #AB5082;
+        }
+
+            .btn-sample:hover,
+            .btn-sample:focus,
+            .btn-sample:active,
+            .btn-sample.active,
+            .open .dropdown-toggle.btn-sample {
+                color: #ffffff;
+                background-color: #C24489;
+                border-color: #AB5082;
+            }
+
+            .btn-sample:active,
+            .btn-sample.active,
+            .open .dropdown-toggle.btn-sample {
+                background-image: none;
+            }
+
+            .btn-sample.disabled,
+            .btn-sample[disabled],
+            fieldset[disabled] .btn-sample,
+            .btn-sample.disabled:hover,
+            .btn-sample[disabled]:hover,
+            fieldset[disabled] .btn-sample:hover,
+            .btn-sample.disabled:focus,
+            .btn-sample[disabled]:focus,
+            fieldset[disabled] .btn-sample:focus,
+            .btn-sample.disabled:active,
+            .btn-sample[disabled]:active,
+            fieldset[disabled] .btn-sample:active,
+            .btn-sample.disabled.active,
+            .btn-sample[disabled].active,
+            fieldset[disabled] .btn-sample.active {
+                background-color: #CA609A;
+                border-color: #AB5082;
+            }
+
+            .btn-sample .badge {
+                color: #CA609A;
+                background-color: #ffffff;
+            }
+    </style>
+
 </head>
 <body>
     <br />
@@ -58,7 +107,10 @@
                         <a href="@Url.Action("About", "Home")">About</a>
                     </li>
                     <li>
-                        <a href="@Url.Action("Catalogue", "Home")">Catalogue</a>
+                        <a href="@Url.Action("Index", "Products")">Products</a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Build", "Home")">Build</a>
                     </li>
                     <li>
                         <a href="@Url.Action("Contact", "Home")">Contact</a>

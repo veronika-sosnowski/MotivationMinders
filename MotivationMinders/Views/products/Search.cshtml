@@ -1,18 +1,12 @@
 ﻿@model IEnumerable<MotivationMinders.Models.product>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Search";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-
+<h2>Search</h2>
 <div>
-
     <!-- Creates Search Form -->
     <form action="/products/Search" method="get">
         <table>
@@ -21,7 +15,7 @@
 
                     <input type="text" name="query" class="form-control" />
                     <!--<input type="submit" name="Search" value="Search" />-->
-
+                    
 
                 </td>
                 <td>
@@ -30,9 +24,7 @@
             </tr>
         </table>
     </form>
-
 </div>
-
 <table class="table">
     <tr>
         <th>
@@ -74,5 +66,3 @@
 }
 
 </table>
-
-

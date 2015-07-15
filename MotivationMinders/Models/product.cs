@@ -24,7 +24,7 @@ namespace MotivationMinders.Models
         public string name { get; set; }
         public string type { get; set; }
         public string description { get; set; }
-        public Nullable<decimal> price { get; set; }
+        public decimal price { get; set; }
     
         public virtual ICollection<ProductImage> ProductImages { get; set; }
         public virtual ICollection<ProductTag> ProductTags { get; set; }

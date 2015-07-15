@@ -39,6 +39,11 @@ namespace MotivationMinders.Controllers
 
             return View();
         }
+        public ActionResult Build()
+        {
+            ViewBag.Message = "Your Build page.";
 
+            return View();
+        }
     }
 }

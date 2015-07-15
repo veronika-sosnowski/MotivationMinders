@@ -7,7 +7,6 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MotivationMinders.Models;
-using System.Diagnostics;
 
 namespace MotivationMinders.Controllers
 {
@@ -125,53 +124,11 @@ namespace MotivationMinders.Controllers
             base.Dispose(disposing);
         }
 
-        public ActionResult Gallery()
+        public ActionResult Search(string query)
         {
-            List<ProductImage> all = new List<ProductImage>();
-            // Here MyDatabaseEntities is our datacontext
-            using (MMEntitiesContext dc = new MMEntitiesContext())
-            {
-                all = dc.ProductImages.ToList();
-            }
-            return View(all);
-        }
-
-        public ActionResult Upload()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult Upload(ProductImage IG)
-        {
-            // Apply Validation Here
-
-            if (IG.File.ContentLength > (2 * 1024 * 1024))
-            {
-                Debug.WriteLine("woo");
-                ModelState.AddModelError("CustomError", "File size must be less than 2 MB");
-                return View();
-            }
-            if (!(IG.File.ContentType == "image/jpeg" || IG.File.ContentType == "image/gif"))
-            {
-                ModelState.AddModelError("CustomError", "File type allowed : jpeg and gif");
-                return View();
-            }
-
-            IG.filename = IG.File.FileName;
-            IG.ImageSize = IG.File.ContentLength;
-            IG.productID = 1;
-
-            byte[] data = new byte[IG.File.ContentLength];
-            IG.File.InputStream.Read(data, 0, IG.File.ContentLength);
-
-            IG.image = data;
-            using (MMEntitiesContext dc = new MMEntitiesContext())
-            {
-                dc.ProductImages.Add(IG);
-                dc.SaveChanges();
-            }
-            return RedirectToAction("Gallery");
+            /*MMEntitiesContext db = new MMEntitiesContext();*/
+            var productList = db.products.Where(a => a.name.Contains(query));
+            return View(productList);
         }
     }
 }
