@@ -1,0 +1,43 @@
+﻿@model MotivationMinders.Models.BlogPost
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BlogPost</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.datePublished)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datePublished)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.postTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.postTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.text)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.text)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.postID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
