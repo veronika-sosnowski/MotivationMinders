@@ -252,6 +252,39 @@
     <Content Include="images\logo.png" />
     <Content Include="images\MM.png" />
     <Content Include="images\motivation_miners_biggerfont.jpg" />
+    <Content Include="images\Products\DSC_5350.JPG" />
+    <Content Include="images\Products\DSC_5351.JPG" />
+    <Content Include="images\Products\DSC_5352.JPG" />
+    <Content Include="images\Products\DSC_5353.JPG" />
+    <Content Include="images\Products\DSC_5354.JPG" />
+    <Content Include="images\Products\DSC_5355.JPG" />
+    <Content Include="images\Products\DSC_5356.JPG" />
+    <Content Include="images\Products\DSC_5357.JPG" />
+    <Content Include="images\Products\DSC_5358.JPG" />
+    <Content Include="images\Products\DSC_5359.JPG" />
+    <Content Include="images\Products\DSC_5360.JPG" />
+    <Content Include="images\Products\DSC_5361.JPG" />
+    <Content Include="images\Products\DSC_5362.JPG" />
+    <Content Include="images\Products\DSC_5363.JPG" />
+    <Content Include="images\Products\DSC_5364.JPG" />
+    <Content Include="images\Products\DSC_5365.JPG" />
+    <Content Include="images\Products\DSC_5366.JPG" />
+    <Content Include="images\Products\DSC_5367.JPG" />
+    <Content Include="images\Products\DSC_5368.JPG" />
+    <Content Include="images\Products\DSC_5369.JPG" />
+    <Content Include="images\Products\DSC_5370.JPG" />
+    <Content Include="images\Products\DSC_5371.JPG" />
+    <Content Include="images\Products\DSC_5372.JPG" />
+    <Content Include="images\Products\DSC_5373.JPG" />
+    <Content Include="images\Products\DSC_5378.JPG" />
+    <Content Include="images\Products\DSC_5379.JPG" />
+    <Content Include="images\Products\DSC_5380.JPG" />
+    <Content Include="images\Products\DSC_5381.JPG" />
+    <Content Include="images\Products\DSC_5382.JPG" />
+    <Content Include="images\Products\DSC_5383.JPG" />
+    <Content Include="images\Products\DSC_5384.JPG" />
+    <Content Include="images\Products\DSC_5385.JPG" />
+    <Content Include="images\Products\DSC_5386.JPG" />
     <Content Include="images\testbg.png" />
     <Content Include="images\testlogo.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -345,6 +378,7 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

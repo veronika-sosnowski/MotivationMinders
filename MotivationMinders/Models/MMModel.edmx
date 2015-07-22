@@ -30,7 +30,8 @@
           </Key>
           <Property Name="productImageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="productID" Type="int" Nullable="false" />
-          <Property Name="image" Type="image" Nullable="false" />
+          <Property Name="filename" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="featured" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="products">
           <Key>
@@ -84,7 +85,7 @@
           <Property Name="PasswordSalt" Type="nvarchar" MaxLength="200" />
           <Property Name="Role" Type="int" />
         </EntityType>
-        <Association Name="FK__ProductIm__produ__44FF419A">
+        <Association Name="FK__ProductIm__produ__6FE99F9F">
           <End Role="products" Type="Self.products" Multiplicity="1" />
           <End Role="ProductImages" Type="Self.ProductImages" Multiplicity="*" />
           <ReferentialConstraint>
@@ -117,7 +118,7 @@
           <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="SystemUser" EntityType="Self.SystemUser" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__ProductIm__produ__44FF419A" Association="Self.FK__ProductIm__produ__44FF419A">
+          <AssociationSet Name="FK__ProductIm__produ__6FE99F9F" Association="Self.FK__ProductIm__produ__6FE99F9F">
             <End Role="products" EntitySet="products" />
             <End Role="ProductImages" EntitySet="ProductImages" />
           </AssociationSet>
@@ -146,8 +147,9 @@
           </Key>
           <Property Name="productImageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="productID" Type="Int32" Nullable="false" />
-          <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
           <NavigationProperty Name="product" Relationship="Self.FK__ProductIm__produ__44FF419A" FromRole="ProductImages" ToRole="products" />
+          <Property Name="filename" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="featured" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="product">
           <Key>
@@ -252,7 +254,7 @@
           </Key>
           <Property Name="postID" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
           <Property Name="datePublished" Nullable="false" Precision="3" Type="DateTime" />
-          <Property Name="postTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" Type="String" />
+          <Property Name="postTitle" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
           <Property Name="text" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" Type="String" />
         </EntityType>
       </Schema>
@@ -270,15 +272,6 @@
                 <ScalarProperty Name="organization" ColumnName="organization" />
                 <ScalarProperty Name="supplierName" ColumnName="supplierName" />
               </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="ProductImages">
-            <EntityTypeMapping TypeName="mainDBModel1.ProductImage">
-              <MappingFragment StoreEntitySet="ProductImages">
-                <ScalarProperty Name="productImageID" ColumnName="productImageID" />
-                <ScalarProperty Name="productID" ColumnName="productID" />
-                <ScalarProperty Name="image" ColumnName="image" />
-                </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="products">
@@ -345,6 +338,16 @@
                 <ScalarProperty Name="text" ColumnName="text" />
                 <ScalarProperty Name="datePublished" ColumnName="datePublished" />
                 <ScalarProperty Name="postID" ColumnName="postID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProductImages">
+            <EntityTypeMapping TypeName="IsTypeOf(mainDBModel1.ProductImage)">
+              <MappingFragment StoreEntitySet="ProductImages">
+                <ScalarProperty Name="featured" ColumnName="featured" />
+                <ScalarProperty Name="filename" ColumnName="filename" />
+                <ScalarProperty Name="productID" ColumnName="productID" />
+                <ScalarProperty Name="productImageID" ColumnName="productImageID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -33,14 +34,22 @@ namespace MotivationMinders.Controllers
         {
             ViewBag.Message = "Your catalogue page.";
 
-            return View();
+            return View(db.ProductImages.ToList());
         }
 
-        public ActionResult Product()
+        public ActionResult Product(int? id)
         {
             ViewBag.Message = "Your product page.";
-
-            return View();
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            product product = db.products.Find(id);
+            if (product == null)
+            {
+                return HttpNotFound();
+            }
+            return View(product);
         }
         public ActionResult Build()
         {

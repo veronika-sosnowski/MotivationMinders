@@ -16,8 +16,9 @@
     </Key>
     <Property Name="productImageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="productID" Type="Int32" Nullable="false" />
-    <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
     <NavigationProperty Name="product" Relationship="Self.FK__ProductIm__produ__44FF419A" FromRole="ProductImages" ToRole="products" />
+    <Property Name="filename" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="featured" Type="Boolean" Nullable="false" />
   </EntityType>
   <EntityType Name="product">
     <Key>
@@ -122,7 +123,7 @@
     </Key>
     <Property Name="postID" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
     <Property Name="datePublished" Nullable="false" Precision="3" Type="DateTime" />
-    <Property Name="postTitle" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="postTitle" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
     <Property Name="text" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" Type="String" />
   </EntityType>
 </Schema>

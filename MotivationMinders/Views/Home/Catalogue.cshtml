@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<MotivationMinders.Models.ProductImage>
+
+@{
     ViewBag.Title = "Catalogue";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -14,8 +16,39 @@
         </div>
     </div>
     <!-- /.row -->
+    @{
+        int counter = 0;
+        foreach (var item in Model)
+        {
+            
+            if (item.featured == true)
+            {
+                if (counter == 0)
+                { 
+                    //<div class='row'>
+                }
+                if (counter < 3)
+                {
+                    <div class="col-md-4 img-portfolio">
+                        <a href="@Url.Action("Product", "Home", new { id=item.productID })">
+                            <img class="img-responsive img-hover" src="~/images/Products/@(item.filename).jpg" style="">
+                        </a>
+                        <h3>
+                            <a href="@Url.Action("Product", "Home")">@(item.product.name)</a>
+                        </h3>
+                        <p>@(item.product.description)</p>
+                    </div>
+                    counter++;
+                }
+                if (counter == 3)
+                {
+                    counter = 0;
+                }
+            }
+        }
+    }
     <!-- Projects Row -->
-    <div class="row">
+    @*<div class="row">
         <div class="col-md-4 img-portfolio">
             <a href="@Url.Action("Product", "Home")">
                 <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
@@ -105,7 +138,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
         </div>
     </div>
-    <!-- /.row -->
+    <!-- /.row -->*@
     <hr>
     <!-- Pagination -->
     <div class="row text-center">
@@ -135,4 +168,4 @@
             </ul>
         </div>
     </div>
-</div>
+    </div>

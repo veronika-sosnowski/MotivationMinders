@@ -12,15 +12,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ProductImages">
-      <EntityTypeMapping TypeName="mainDBModel1.ProductImage">
-        <MappingFragment StoreEntitySet="ProductImages">
-          <ScalarProperty Name="productImageID" ColumnName="productImageID" />
-          <ScalarProperty Name="productID" ColumnName="productID" />
-          <ScalarProperty Name="image" ColumnName="image" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="products">
       <EntityTypeMapping TypeName="mainDBModel1.product">
         <MappingFragment StoreEntitySet="products">
@@ -85,6 +76,16 @@
           <ScalarProperty Name="text" ColumnName="text" />
           <ScalarProperty Name="datePublished" ColumnName="datePublished" />
           <ScalarProperty Name="postID" ColumnName="postID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductImages">
+      <EntityTypeMapping TypeName="IsTypeOf(mainDBModel1.ProductImage)">
+        <MappingFragment StoreEntitySet="ProductImages">
+          <ScalarProperty Name="featured" ColumnName="featured" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="productImageID" ColumnName="productImageID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
