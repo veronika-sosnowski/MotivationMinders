@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<MotivationMinders.Models.product>
+
+@{
     ViewBag.Title = "Build";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -322,57 +324,6 @@
             </table>
 
             <div id="item_container">
-                <div class="item" id="i1">
-                    <img src="../images/CharmsDemo/charm1.png" height="100px" />
-                    <label class="title">Charm 1</label>
-                    <label class="price">$ 2</label>
-                </div>
-                <div class="item" id="i2">
-                    <img src="../images/CharmsDemo/charm2.png" height="100px" />
-                    <label class="title">Charm 2</label>
-                    <label class="price">$ 2</label>
-                </div>
-                <div class="item" id="i3">
-                    <img src="../images/CharmsDemo/charm3.png" height="100px" />
-                    <label class="title">Charm 3</label>
-                    <label class="price">$ 3</label>
-                </div>
-                <div class="item" id="i4">
-                    <img src="../images/CharmsDemo/charm4.png" height="100px" />
-                    <label class="title">Charm 4</label>
-                    <label class="price">$ 3</label>
-                </div>
-                <div class="item" id="i5">
-                    <img src="../images/CharmsDemo/charm5.png" height="100px" />
-                    <label class="title">Charm 5</label>
-                    <label class="price">$ 4</label>
-                </div>
-                <div class="item" id="i6">
-                    <img src="../images/CharmsDemo/charm6.png" height="100px" />
-                    <label class="title">Charm 6</label>
-                    <label class="price">$ 4</label>
-                </div>
-                <div class="item" id="i7">
-                    <img src="../images/CharmsDemo/charm7.png" height="100px" />
-                    <label class="title">Charm 7</label>
-                    <label class="price">$ 5</label>
-                </div>
-                <div class="item" id="i8">
-                    <img src="../images/CharmsDemo/charm8.png" height="100px" />
-                    <label class="title">Charm 8</label>
-                    <label class="price">$ 5</label>
-                </div>
-                <div class="item" id="i9">
-                    <img src="../images/CharmsDemo/charm9.png" height="100px" />
-                    <label class="title">Charm 9</label>
-                    <label class="price">$ 6</label>
-                </div>
-                <div class="item" id="i10">
-                    <img src="../images/CharmsDemo/charm10.png" height="100px" />
-                    <label class="title">Charm 10</label>
-                    <label class="price">$ 6</label>
-                </div>
-
 
                 <div class="clear"></div>
             </div>
@@ -380,7 +331,7 @@
 
         </td>
         <td height="600" width="500000" style="background-image: url('../images/testbg.png'); background-position: bottom center;
-                background-repeat:no-repeat; background-position: middle;">
+                background-repeat:no-repeat; background-position: center;">
 
             <!-- Charm Preview -->
             <div id="cart_container">
@@ -411,6 +362,5 @@
         </td>
     </tr>
 </table>
-    </div>
 
 <!-- </body> -->

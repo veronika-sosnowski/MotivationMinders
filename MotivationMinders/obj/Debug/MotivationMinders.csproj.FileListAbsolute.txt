@@ -441,3 +441,4 @@ F:\Iteration 2\SourceCode\MotivationMinders\bin\Microsoft.Owin.Security.Microsof
 F:\Iteration 2\SourceCode\MotivationMinders\obj\Debug\MotivationMinders.csprojResolveAssemblyReference.cache
 F:\Iteration 2\SourceCode\MotivationMinders\obj\Debug\MotivationMinders.dll
 F:\Iteration 2\SourceCode\MotivationMinders\obj\Debug\MotivationMinders.pdb
+C:\Users\vsosnowski-cc\Source\Repos\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.csprojResolveAssemblyReference.cache

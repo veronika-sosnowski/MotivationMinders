@@ -6,7 +6,7 @@
     </Key>
     <Property Name="postID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="datePublished" Type="datetime" Nullable="false" />
-    <Property Name="postTitle" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="posttitle" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="text" Type="varchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="charm">
@@ -26,8 +26,6 @@
     <Property Name="productImageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="productID" Type="int" Nullable="false" />
     <Property Name="image" Type="image" Nullable="false" />
-    <Property Name="filename" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="filetype" Type="nchar" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="products">
     <Key>
@@ -35,9 +33,15 @@
     </Key>
     <Property Name="productID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="150" Nullable="false" />
     <Property Name="description" Type="nvarchar" MaxLength="150" />
     <Property Name="price" Type="money" />
+    <Property Name="itemPar" Type="int" />
+    <Property Name="discountPrice" Type="money" />
+    <Property Name="stockQuantity" Type="int" />
+    <Property Name="allowBackOrders" Type="bit" />
+    <Property Name="weight" Type="float" />
+    <Property Name="date" Type="time" Precision="7" />
   </EntityType>
   <EntityType Name="ProductTags">
     <Key>

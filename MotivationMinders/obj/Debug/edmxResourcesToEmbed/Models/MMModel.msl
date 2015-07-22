@@ -18,14 +18,18 @@
           <ScalarProperty Name="productImageID" ColumnName="productImageID" />
           <ScalarProperty Name="productID" ColumnName="productID" />
           <ScalarProperty Name="image" ColumnName="image" />
-          <ScalarProperty Name="filename" ColumnName="filename" />
-          <ScalarProperty Name="filetype" ColumnName="filetype" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="products">
       <EntityTypeMapping TypeName="mainDBModel1.product">
         <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="allowBackOrders" ColumnName="allowBackOrders" />
+          <ScalarProperty Name="stockQuantity" ColumnName="stockQuantity" />
+          <ScalarProperty Name="discountPrice" ColumnName="discountPrice" />
+          <ScalarProperty Name="itemPar" ColumnName="itemPar" />
           <ScalarProperty Name="productID" ColumnName="productID" />
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="type" ColumnName="type" />
@@ -75,10 +79,10 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="BlogPosts">
-      <EntityTypeMapping TypeName="mainDBModel1.BlogPost">
+      <EntityTypeMapping TypeName="IsTypeOf(mainDBModel1.BlogPost)">
         <MappingFragment StoreEntitySet="BlogPost">
+          <ScalarProperty Name="postTitle" ColumnName="posttitle" />
           <ScalarProperty Name="text" ColumnName="text" />
-          <ScalarProperty Name="postTitle" ColumnName="postTitle" />
           <ScalarProperty Name="datePublished" ColumnName="datePublished" />
           <ScalarProperty Name="postID" ColumnName="postID" />
         </MappingFragment>
