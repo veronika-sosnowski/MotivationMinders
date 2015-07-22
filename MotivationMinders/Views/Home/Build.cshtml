@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<MotivationMinders.Models.product>
+
+@{
     ViewBag.Title = "Build";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -218,87 +220,87 @@
     <script type="text/javascript" src="../Scripts/jquery-1.5.min.js"></script>
     <script type="text/javascript" src="../Scripts/jquery-ui-1.8.9.custom.min.js"></script>
     <script type="text/javascript">
-    var total_items = 0;
-    var total_price = 0;
-    $(document).ready(function() {
+        var total_items = 0;
+        var total_price = 0;
+        $(document).ready(function () {
 
-        $(".item").draggable({
-            revert: true
-        });
-        $("#cart_items").draggable({
-            axis: "x"
-        });
-
-        $("#cart_items").droppable({
-            accept: ".item",
-            activeClass: "drop-active",
-            hoverClass: "drop-hover",
-            drop: function(event, ui) {
-                var item = ui.draggable.html();
-                var itemid = ui.draggable.attr("id");
-                var html = '<div class="item icart">';
-                html = html + '<div class="divrm">';
-                html = html + '<a onclick="remove(this)" class="remove '+itemid+'">&times;</a>';
-                html = html + '<div/>'+item+'</div>';
-                $("#cart_items").append(html);
-
-                // update total items
-                total_items++;
-                $("#citem").html(total_items);
-
-                // update total price
-                var price = parseInt(ui.draggable.find(".price").html().replace("$ ", ""));
-                total_price = total_price + price;
-                $("#cprice").html("$ " + total_price);
-
-                // expand cart items
-                if (total_items > 4) {
-                    $("#cart_items").animate({width: "+=120"}, 'slow');
-                }
-            }
-        });
-
-
-        $("#btn_next").click(function() {
-            $("#cart_items").animate({left: "-=100"}, 100);
-            return false;
-        });
-        $("#btn_prev").click(function() {
-            $("#cart_items").animate({left: "+=100"}, 100);
-            return false;
-        });
-        $("#btn_clear").click(function() {
-            $("#cart_items").fadeOut("2000", function() {
-               $(this).html("").fadeIn("fast").css({left: 0});
+            $(".item").draggable({
+                revert: true
             });
-            $("#citem").html("0");
-            $("#cprice").html("$ 0");
-            total_items = 0;
-            total_price = 0;
-            return false;
+            $("#cart_items").draggable({
+                axis: "x"
+            });
+
+            $("#cart_items").droppable({
+                accept: ".item",
+                activeClass: "drop-active",
+                hoverClass: "drop-hover",
+                drop: function (event, ui) {
+                    var item = ui.draggable.html();
+                    var itemid = ui.draggable.attr("id");
+                    var html = '<div class="item icart">';
+                    html = html + '<div class="divrm">';
+                    html = html + '<a onclick="remove(this)" class="remove ' + itemid + '">&times;</a>';
+                    html = html + '<div/>' + item + '</div>';
+                    $("#cart_items").append(html);
+
+                    // update total items
+                    total_items++;
+                    $("#citem").html(total_items);
+
+                    // update total price
+                    var price = parseInt(ui.draggable.find(".price").html().replace("$ ", ""));
+                    total_price = total_price + price;
+                    $("#cprice").html("$ " + total_price);
+
+                    // expand cart items
+                    if (total_items > 4) {
+                        $("#cart_items").animate({ width: "+=120" }, 'slow');
+                    }
+                }
+            });
+
+
+            $("#btn_next").click(function () {
+                $("#cart_items").animate({ left: "-=100" }, 100);
+                return false;
+            });
+            $("#btn_prev").click(function () {
+                $("#cart_items").animate({ left: "+=100" }, 100);
+                return false;
+            });
+            $("#btn_clear").click(function () {
+                $("#cart_items").fadeOut("2000", function () {
+                    $(this).html("").fadeIn("fast").css({ left: 0 });
+                });
+                $("#citem").html("0");
+                $("#cprice").html("$ 0");
+                total_items = 0;
+                total_price = 0;
+                return false;
+            });
         });
-    });
-    function remove(el) {
-        $(el).hide();
-        $(el).parent().parent().effect("highlight", {color: "#ff0000"}, 1000);
-        $(el).parent().parent().fadeOut('1000');
-        setTimeout(function() {
-            $(el).parent().parent().remove();
-            // collapse cart items
-            if (total_items > 3) {
-                $("#cart_items").animate({width: "-=120"}, 'slow');
-            }
-        }, 1100);
+        function remove(el) {
+            $(el).hide();
+            $(el).parent().parent().effect("highlight", { color: "#ff0000" }, 1000);
+            $(el).parent().parent().fadeOut('1000');
+            setTimeout(function () {
+                $(el).parent().parent().remove();
+                // collapse cart items
+                if (total_items > 3) {
+                    $("#cart_items").animate({ width: "-=120" }, 'slow');
+                }
+            }, 1100);
 
-        // update total item
-        total_items--;
-        $("#citem").html(total_items);
+            // update total item
+            total_items--;
+            $("#citem").html(total_items);
 
-        // update total price
-        var price = parseInt($(el).parent().parent().find(".price").html().replace("$ ", ""));
-        total_price = total_price - price;
-        $("#cprice").html("$ " + total_price);
-    }
+            // update total price
+            var price = parseInt($(el).parent().parent().find(".price").html().replace("$ ", ""));
+            total_price = total_price - price;
+            $("#cprice").html("$ " + total_price);
+        }
     </script>
 }
 <!-- </head> -->
@@ -311,106 +313,75 @@
         </td>
     </tr>
     <tr>
-        <td align="center">
-            <!-- Charms -->
-            <table>
-                <tr>
-                    <td width="475"><input type="text" class="form-control" id="searchcharms" size="10"></td>
-                    <td width="25"></td>
-                    <td><button class="btn btn-sample">Search</button></td>
-                </tr>
-            </table>
+    <td align="center">
+        <!-- Charms -->
+        <table>
+            <tr>
+                <td width="475"><input type="text" class="form-control" id="searchcharms" size="10"></td>
+                <td width="25"></td>
+                <td><button class="btn btn-sample">Search</button></td>
+            </tr>
+        </table>
 
-            <div id="item_container">
-                <div class="item" id="i1">
-                    <img src="../images/CharmsDemo/charm1.png" height="100px" />
-                    <label class="title">Charm 1</label>
-                    <label class="price">$ 2</label>
-                </div>
-                <div class="item" id="i2">
-                    <img src="../images/CharmsDemo/charm2.png" height="100px" />
-                    <label class="title">Charm 2</label>
-                    <label class="price">$ 2</label>
-                </div>
-                <div class="item" id="i3">
-                    <img src="../images/CharmsDemo/charm3.png" height="100px" />
-                    <label class="title">Charm 3</label>
-                    <label class="price">$ 3</label>
-                </div>
-                <div class="item" id="i4">
-                    <img src="../images/CharmsDemo/charm4.png" height="100px" />
-                    <label class="title">Charm 4</label>
-                    <label class="price">$ 3</label>
-                </div>
-                <div class="item" id="i5">
-                    <img src="../images/CharmsDemo/charm5.png" height="100px" />
-                    <label class="title">Charm 5</label>
-                    <label class="price">$ 4</label>
-                </div>
-                <div class="item" id="i6">
-                    <img src="../images/CharmsDemo/charm6.png" height="100px" />
-                    <label class="title">Charm 6</label>
-                    <label class="price">$ 4</label>
-                </div>
-                <div class="item" id="i7">
-                    <img src="../images/CharmsDemo/charm7.png" height="100px" />
-                    <label class="title">Charm 7</label>
-                    <label class="price">$ 5</label>
-                </div>
-                <div class="item" id="i8">
-                    <img src="../images/CharmsDemo/charm8.png" height="100px" />
-                    <label class="title">Charm 8</label>
-                    <label class="price">$ 5</label>
-                </div>
-                <div class="item" id="i9">
-                    <img src="../images/CharmsDemo/charm9.png" height="100px" />
-                    <label class="title">Charm 9</label>
-                    <label class="price">$ 6</label>
-                </div>
-                <div class="item" id="i10">
-                    <img src="../images/CharmsDemo/charm10.png" height="100px" />
-                    <label class="title">Charm 10</label>
-                    <label class="price">$ 6</label>
-                </div>
-
-
-                <div class="clear"></div>
+        <div id="item_container">
+            <div class="item" id="i1">
+                <img src="../images/CharmsDemo/charm1.png" height="100px" />
+                <label class="title">Charm 1</label>
+                <label class="price">$ 2</label>
             </div>
-            <!-- End of Charms -->
 
-        </td>
-        <td height="600" width="500000" style="background-image: url('../images/testbg.png'); background-position: bottom center;
+            <div class="clear"></div>
+        </div>
+        <!-- End of Charms -->
+
+    </td>
+    <td height="600" width="500000" style="background-image: url('../images/testbg.png'); background-position: bottom center;
                 background-repeat:no-repeat; background-position: middle;">
 
-            <!-- Charm Preview -->
-            <div id="cart_container">
-                <div id="cart_toolbar">
-                    <div id="cart_items" class="back"></div>
-                </div>
-
-
-                <div id="navigate">
-                    <div id="nav_left">
-                        <a href="" id="btn_prev"><</a>
-                        <a href="" id="btn_next">></a>
-                        <a href="" id="btn_clear">Clear Charms</a>
-                    </div>
-                    <div id="nav_right">
-                        <span class="sptext">
-                            <label>Items </label><label class="count" id="citem">0</label>
-                        </span>
-                        <span class="sptext">
-                            <label>Price </label><label class="count" id="cprice">$ 0</label>
-                        </span>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+        <!-- Charm Preview -->
+        <div id="cart_container">
+            <div id="cart_toolbar">
+                <div id="cart_items" class="back"></div>
             </div>
-            <!-- End of Charm Preview -->
 
+
+            <div id="navigate">
+                <div id="nav_left">
+                    <a href="" id="btn_prev"><</a>
+                    <a href="" id="btn_next">></a>
+                    <a href="" id="btn_clear">Clear Charms</a>
+                </div>
+                <div id="nav_right">
+                    <span class="sptext">
+                        <label>Items </label><label class="count" id="citem">0</label>
+                    </span>
+                    <span class="sptext">
+                        <label>Price </label><label class="count" id="cprice">$ 0</label>
+                    </span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <!-- End of Charm Preview -->
+
+    </td>
+
+    @foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
         </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+
     </tr>
+    }
 </table>
     </div>
-
-<!-- </body> -->
+<form action="#">
+    <button>
+        @Html.ActionLink("Build", "Home")
+    </button>
+   
+</form>

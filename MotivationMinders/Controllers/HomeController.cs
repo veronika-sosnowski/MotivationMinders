@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MotivationMinders.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,10 @@ namespace MotivationMinders.Controllers
 {
     public class HomeController : Controller
     {
+        private MMEntitiesContext db = new MMEntitiesContext();
         public ActionResult Index()
         {
+
             return View();
         }
 
@@ -43,7 +46,7 @@ namespace MotivationMinders.Controllers
         {
             ViewBag.Message = "Your Build page.";
 
-            return View();
+            return View(db.products.ToList());
         }
     }
 }
