@@ -313,74 +313,78 @@
         </td>
     </tr>
     <tr>
-    <td align="center">
-        <!-- Charms -->
-        <table>
-            <tr>
-                <td width="475"><input type="text" class="form-control" id="searchcharms" size="10"></td>
-                <td width="25"></td>
-                <td><button class="btn btn-sample">Search</button></td>
-            </tr>
-        </table>
+        <td align="center">
+            <!-- Charms -->
+            <table>
+                <tr>
+                    <td width="475"><input type="text" class="form-control" id="searchcharms" size="10"></td>
+                    <td width="25"></td>
+                    <td><button class="btn btn-sample">Search</button></td>
+                </tr>
+            </table>
 
-        <div id="item_container">
-            <div class="item" id="i1">
-                <img src="../images/CharmsDemo/charm1.png" style="height:100px" />
-                <label class="title">Charm 1</label>
-                <label class="price">$ 2</label>
-            </div>
-
-            <div class="clear"></div>
-        </div>
-        <!-- End of Charms -->
-
-    </td>
-    <td height="600" width="500000" style="background-image: url('../images/testbg.png'); background-position: bottom center;
-                background-repeat:no-repeat; background-position: center;">
-
-        <!-- Charm Preview -->
-        <div id="cart_container">
-            <div id="cart_toolbar">
-                <div id="cart_items" class="back"></div>
-            </div>
-
-
-            <div id="navigate">
-                <div id="nav_left">
-                    <a href="" id="btn_prev"><</a>
-                    <a href="" id="btn_next">></a>
-                    <a href="" id="btn_clear">Clear Charms</a>
+            <div id="item_container">
+                <div class="item" id="i1">
+                    <img src="../images/CharmsDemo/charm1.png" style="height:100px" />
+                    <label class="title">Charm 1</label>
+                    <label class="price">$ 2</label>
                 </div>
-                <div id="nav_right">
-                    <span class="sptext">
-                        <label>Items </label><label class="count" id="citem">0</label>
-                    </span>
-                    <span class="sptext">
-                        <label>Price </label><label class="count" id="cprice">$ 0</label>
-                    </span>
-                </div>
+
                 <div class="clear"></div>
             </div>
-        </div>
-        <!-- End of Charm Preview -->
+            <!-- End of Charms -->
 
-    </td>
-
-    @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.name)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.price)
-        </td>
+        <td height="600" width="500000" style="background-image: url('../images/testbg.png'); background-position: bottom center;
+                background-repeat:no-repeat; background-position: center;">
 
+            <!-- Charm Preview -->
+            <div id="cart_container">
+                <div id="cart_toolbar">
+                    <div id="cart_items" class="back"></div>
+                </div>
+
+
+                <div id="navigate">
+                    <div id="nav_left">
+                        <a href="" id="btn_prev"><</a>
+                        <a href="" id="btn_next">></a>
+                        <a href="" id="btn_clear">Clear Charms</a>
+                    </div>
+                    <div id="nav_right">
+                        <span class="sptext">
+                            <label>Items </label><label class="count" id="citem">0</label>
+                        </span>
+                        <span class="sptext">
+                            <label>Price </label><label class="count" id="cprice">$ 0</label>
+                        </span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!-- End of Charm Preview -->
+
+        </td>
     </tr>
+</table>
+<table align="right" width="600px">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                $@Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                <button type="button" class="btn btn-sample" onclick="///Convert Price to Int and and to total">
+                    <span class="glyphicon glyphicon-shopping-cart" />
+                   $@Convert.ToInt32(item.price) <!--USE THIS SOMEHOW-->
+                    
+                </button>
+            </td>
+
+        </tr>
     }
 </table>
-<form action="#">
-    <button>
-        @Html.ActionLink("Build", "Home")
-    </button>
-   
-</form>
