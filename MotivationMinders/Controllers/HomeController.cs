@@ -40,15 +40,7 @@ namespace MotivationMinders.Controllers
         public ActionResult Product(int? id)
         {
             ViewBag.Message = "Your product page.";
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
             product product = db.products.Find(id);
-            if (product == null)
-            {
-                return HttpNotFound();
-            }
             return View(product);
         }
         public ActionResult Build()

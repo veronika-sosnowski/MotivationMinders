@@ -497,3 +497,4 @@ C:\Users\solson-cc\Source\Repos\MotivationMinders\MotivationMinders\bin\Microsof
 C:\Users\solson-cc\Source\Repos\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.csprojResolveAssemblyReference.cache
 C:\Users\solson-cc\Source\Repos\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.dll
 C:\Users\solson-cc\Source\Repos\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.pdb
+C:\Users\vsosnowski-cc\Source\Repos\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.csprojResolveAssemblyReference.cache
