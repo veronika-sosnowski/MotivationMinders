@@ -33,10 +33,7 @@
                         <a href="@Url.Action("Product", "Home", new { id=item.productID })">
                             <img class="img-responsive img-hover" src="~/images/Products/@(item.filename).jpg" style="">
                         </a>
-                        <h3>
-                            <a href="@Url.Action("Product", "Home")">@(item.product.name)</a>
-                        </h3>
-                        <p>@(item.product.description)</p>
+                        <p>@(item.product.price)</p>
                     </div>
                     counter++;
                 }

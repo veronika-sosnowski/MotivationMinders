@@ -47,7 +47,7 @@ namespace MotivationMinders.Controllers
         {
             ViewBag.Message = "Your Build page.";
 
-            return View(db.products.ToList());
+            return View(db.ProductImages.ToList());
         }
     }
 }
