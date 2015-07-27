@@ -1,5 +1,4 @@
-﻿@model IEnumerable<MotivationMinders.Models.product>
-
+﻿@model IEnumerable<MotivationMinders.Models.ProductImage>
 @{
     ViewBag.Title = "Build";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -368,23 +367,28 @@
     </tr>
 </table>
 <table align="right" width="600px">
+    
     @foreach (var item in Model)
     {
         <tr>
+            @{
+            if (item.featured == true)
+            {
             <td>
-                @Html.DisplayFor(modelItem => item.name)
+             <div class="col-md-4 img-portfolio">
+                        <a href="@Url.Action("Product", "Home", new { id=item.productID })">
+                            <img class="img-responsive img-hover" src="~/images/Products/@(item.filename).jpg" style="">
+                        </a>
+                        <h3>
+                            <a href="@Url.Action("Product", "Home")">@(item.product.name)</a>
+                        </h3>
+                        <p>@(item.product.description)</p>
+                    </div>
+                @Html.DisplayFor(modelItem => item.product.name)
+                
             </td>
-            <td>
-                $@Html.DisplayFor(modelItem => item.price)
-            </td>
-            <td>
-                <button type="button" class="btn btn-sample" onclick="///Convert Price to Int and and to total">
-                    <span class="glyphicon glyphicon-shopping-cart" />
-                   $@Convert.ToInt32(item.price) <!--USE THIS SOMEHOW-->
-                    
-                </button>
-            </td>
-
-        </tr>
+            }
+            }
+        </tr>       
     }
 </table>
