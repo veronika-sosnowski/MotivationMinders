@@ -6,7 +6,7 @@
     </Key>
     <Property Name="postID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="datePublished" Type="datetime" Nullable="false" />
-    <Property Name="postTitle" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="posttitle" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="text" Type="varchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="charm">
@@ -25,9 +25,8 @@
     </Key>
     <Property Name="productImageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="productID" Type="int" Nullable="false" />
-    <Property Name="image" Type="image" Nullable="false" />
-    <Property Name="filename" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="filetype" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="filename" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="featured" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="products">
     <Key>
@@ -35,9 +34,15 @@
     </Key>
     <Property Name="productID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="150" Nullable="false" />
     <Property Name="description" Type="nvarchar" MaxLength="150" />
     <Property Name="price" Type="money" />
+    <Property Name="itemPar" Type="int" />
+    <Property Name="discountPrice" Type="money" />
+    <Property Name="stockQuantity" Type="int" />
+    <Property Name="allowBackOrders" Type="bit" />
+    <Property Name="weight" Type="float" />
+    <Property Name="date" Type="time" Precision="7" />
   </EntityType>
   <EntityType Name="ProductTags">
     <Key>
@@ -75,7 +80,7 @@
     <Property Name="PasswordSalt" Type="nvarchar" MaxLength="200" />
     <Property Name="Role" Type="int" />
   </EntityType>
-  <Association Name="FK__ProductIm__produ__44FF419A">
+  <Association Name="FK__ProductIm__produ__6FE99F9F">
     <End Role="products" Type="Self.products" Multiplicity="1" />
     <End Role="ProductImages" Type="Self.ProductImages" Multiplicity="*" />
     <ReferentialConstraint>
@@ -108,7 +113,7 @@
     <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SystemUser" EntityType="Self.SystemUser" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK__ProductIm__produ__44FF419A" Association="Self.FK__ProductIm__produ__44FF419A">
+    <AssociationSet Name="FK__ProductIm__produ__6FE99F9F" Association="Self.FK__ProductIm__produ__6FE99F9F">
       <End Role="products" EntitySet="products" />
       <End Role="ProductImages" EntitySet="ProductImages" />
     </AssociationSet>

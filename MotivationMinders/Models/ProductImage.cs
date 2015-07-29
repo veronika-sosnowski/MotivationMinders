@@ -16,9 +16,8 @@ namespace MotivationMinders.Models
     {
         public int productImageID { get; set; }
         public int productID { get; set; }
-        public byte[] image { get; set; }
         public string filename { get; set; }
-        public string filetype { get; set; }
+        public bool featured { get; set; }
     
         public virtual product product { get; set; }
     }

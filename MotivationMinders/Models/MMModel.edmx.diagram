@@ -14,7 +14,7 @@
         <EntityTypeShape EntityType="mainDBModel1.SystemUser" Width="1.5" PointX="5.5" PointY="3.625" IsExpanded="true" />
         <AssociationConnector Association="mainDBModel1.FK__ProductIm__produ__44FF419A" ManuallyRouted="false" />
         <AssociationConnector Association="mainDBModel1.FK__ProductTa__produ__4222D4EF" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="mainDBModel1.BlogPost" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="mainDBModel1.BlogPost" PointX="9.5" PointY="3.25" Width="1.5" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

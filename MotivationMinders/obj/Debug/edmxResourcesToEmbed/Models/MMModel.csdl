@@ -16,10 +16,9 @@
     </Key>
     <Property Name="productImageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="productID" Type="Int32" Nullable="false" />
-    <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
-    <Property Name="filename" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="filetype" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
     <NavigationProperty Name="product" Relationship="Self.FK__ProductIm__produ__44FF419A" FromRole="ProductImages" ToRole="products" />
+    <Property Name="filename" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="featured" Type="Boolean" Nullable="false" />
   </EntityType>
   <EntityType Name="product">
     <Key>
@@ -27,11 +26,17 @@
     </Key>
     <Property Name="productID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="type" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="description" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Name="price" Type="Decimal" Precision="19" Scale="4" />
     <NavigationProperty Name="ProductImages" Relationship="Self.FK__ProductIm__produ__44FF419A" FromRole="products" ToRole="ProductImages" />
     <NavigationProperty Name="ProductTags" Relationship="Self.FK__ProductTa__produ__4222D4EF" FromRole="products" ToRole="ProductTags" />
+    <Property Name="itemPar" Type="Int32" />
+    <Property Name="discountPrice" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="stockQuantity" Type="Int32" />
+    <Property Name="allowBackOrders" Type="Boolean" />
+    <Property Name="weight" Type="Double" />
+    <Property Name="date" Type="Time" Precision="7" />
   </EntityType>
   <EntityType Name="ProductTag">
     <Key>
@@ -116,9 +121,9 @@
     <Key>
       <PropertyRef Name="postID" />
     </Key>
-    <Property Name="postID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="datePublished" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="postTitle" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="text" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="postID" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="datePublished" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="postTitle" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="text" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" Type="String" />
   </EntityType>
 </Schema>
