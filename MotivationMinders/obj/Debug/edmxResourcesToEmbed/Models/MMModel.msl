@@ -74,5 +74,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="BlogPosts">
+      <EntityTypeMapping TypeName="mainDBModel1.BlogPost">
+        <MappingFragment StoreEntitySet="BlogPost">
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="postTitle" ColumnName="postTitle" />
+          <ScalarProperty Name="datePublished" ColumnName="datePublished" />
+          <ScalarProperty Name="postID" ColumnName="postID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

@@ -32,5 +32,6 @@ namespace MotivationMinders.Models
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Supplier> Suppliers { get; set; }
         public virtual DbSet<SystemUser> SystemUsers { get; set; }
+        public virtual DbSet<BlogPost> BlogPosts { get; set; }
     }
 }

@@ -24,10 +24,10 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.tag)
+            @Html.DisplayFor(modelItem => item.product.name)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.product.name)
+            @Html.DisplayFor(modelItem => item.tag)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ProductTagId }) |
@@ -38,3 +38,7 @@
 }
 
 </table>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

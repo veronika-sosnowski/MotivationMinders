@@ -4,7 +4,16 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="mainDBModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="mainDBModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BlogPost">
+          <Key>
+            <PropertyRef Name="postID" />
+          </Key>
+          <Property Name="postID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="datePublished" Type="datetime" Nullable="false" />
+          <Property Name="postTitle" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="text" Type="varchar(max)" Nullable="false" />
+        </EntityType>
         <EntityType Name="charm">
           <Key>
             <PropertyRef Name="CharmID" />
@@ -33,7 +42,7 @@
           <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="description" Type="nvarchar" MaxLength="150" />
-          <Property Name="price" Type="money" Nullable="false" />
+          <Property Name="price" Type="money" />
         </EntityType>
         <EntityType Name="ProductTags">
           <Key>
@@ -96,6 +105,7 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="mainDBModel1StoreContainer">
+          <EntitySet Name="BlogPost" EntityType="Self.BlogPost" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="charm" EntityType="Self.charm" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ProductImages" EntityType="Self.ProductImages" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="products" EntityType="Self.products" Schema="dbo" store:Type="Tables" />
@@ -112,8 +122,7 @@
             <End Role="ProductTags" EntitySet="ProductTags" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="mainDBModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -146,7 +155,7 @@
           <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="description" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
-          <Property Name="price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="price" Type="Decimal" Precision="19" Scale="4" />
           <NavigationProperty Name="ProductImages" Relationship="Self.FK__ProductIm__produ__44FF419A" FromRole="products" ToRole="ProductImages" />
           <NavigationProperty Name="ProductTags" Relationship="Self.FK__ProductTa__produ__4222D4EF" FromRole="products" ToRole="ProductTags" />
         </EntityType>
@@ -227,7 +236,17 @@
             <End Role="products" EntitySet="products" />
             <End Role="ProductTags" EntitySet="ProductTags" />
           </AssociationSet>
+          <EntitySet Name="BlogPosts" EntityType="mainDBModel1.BlogPost" />
         </EntityContainer>
+        <EntityType Name="BlogPost">
+          <Key>
+            <PropertyRef Name="postID" />
+          </Key>
+          <Property Name="postID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="datePublished" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="postTitle" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="text" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -304,6 +323,16 @@
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
                 <ScalarProperty Name="Role" ColumnName="Role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BlogPosts">
+            <EntityTypeMapping TypeName="mainDBModel1.BlogPost">
+              <MappingFragment StoreEntitySet="BlogPost">
+                <ScalarProperty Name="text" ColumnName="text" />
+                <ScalarProperty Name="postTitle" ColumnName="postTitle" />
+                <ScalarProperty Name="datePublished" ColumnName="datePublished" />
+                <ScalarProperty Name="postID" ColumnName="postID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
