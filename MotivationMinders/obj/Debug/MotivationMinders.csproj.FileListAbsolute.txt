@@ -384,7 +384,6 @@ G:\SUMMER 2015\Motivation Minders\MotivationMindersJuly9\MotivationMinders\Motiv
 G:\SUMMER 2015\Motivation Minders\MotivationMindersJuly9\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.csprojResolveAssemblyReference.cache
 G:\SUMMER 2015\Motivation Minders\MotivationMindersJuly9\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.dll
 G:\SUMMER 2015\Motivation Minders\MotivationMindersJuly9\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.pdb
-C:\Users\lqhillier-cc\Source\Repos\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.csprojResolveAssemblyReference.cache
 F:\Iteration 2\SourceCode\MotivationMinders\bin\MotivationMinders.dll.config
 F:\Iteration 2\SourceCode\MotivationMinders\bin\MotivationMinders.dll
 F:\Iteration 2\SourceCode\MotivationMinders\bin\MotivationMinders.pdb
