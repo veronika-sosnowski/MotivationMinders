@@ -25,12 +25,6 @@ namespace MotivationMinders.Models
         public string type { get; set; }
         public string description { get; set; }
         public Nullable<decimal> price { get; set; }
-        public Nullable<int> itemPar { get; set; }
-        public Nullable<decimal> discountPrice { get; set; }
-        public Nullable<int> stockQuantity { get; set; }
-        public Nullable<bool> allowBackOrders { get; set; }
-        public Nullable<double> weight { get; set; }
-        public Nullable<System.TimeSpan> date { get; set; }
     
         public virtual ICollection<ProductImage> ProductImages { get; set; }
         public virtual ICollection<ProductTag> ProductTags { get; set; }
