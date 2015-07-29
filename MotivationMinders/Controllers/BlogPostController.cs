@@ -10,107 +10,107 @@ using MotivationMinders.Models;
 
 namespace MotivationMinders.Controllers
 {
-    public class productsController : Controller
+    public class BlogPostController : Controller
     {
         private MMEntitiesContext db = new MMEntitiesContext();
 
-        // GET: products
+        // GET: BlogPost
         public ActionResult Index()
         {
-            //I AM MAKING A CHANGE.
-            return View(db.products.ToList());
+            return View(db.BlogPosts.ToList());
         }
 
-        // GET: products/Details/5
+        // GET: BlogPost/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            product product = db.products.Find(id);
-            if (product == null)
+            BlogPost blogPost = db.BlogPosts.Find(id);
+            if (blogPost == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(blogPost);
         }
 
-        // GET: products/Create
+        // GET: BlogPost/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: products/Create
+        // POST: BlogPost/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "productID,name,type,description,price")] product product)
+        public ActionResult Create([Bind(Include = "postID,datePublished,postTitle,text")] BlogPost blogPost)
         {
             if (ModelState.IsValid)
             {
-                db.products.Add(product);
+                db.BlogPosts.Add(blogPost);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(product);
+            return View(blogPost);
         }
 
-        // GET: products/Edit/5
+        // GET: BlogPost/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            product product = db.products.Find(id);
-            if (product == null)
+            BlogPost blogPost = db.BlogPosts.Find(id);
+            if (blogPost == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(blogPost);
         }
 
-        // POST: products/Tags/5
+        // POST: BlogPost/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "productID,name,type,description,price")] product product)
+        public ActionResult Edit([Bind(Include = "postID,datePublished,postTitle,text")] BlogPost blogPost)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(product).State = EntityState.Modified;
+                db.Entry(blogPost).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(product);
+            return View(blogPost);
         }
-        // GET: products/Delete/5
+
+        // GET: BlogPost/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            product product = db.products.Find(id);
-            if (product == null)
+            BlogPost blogPost = db.BlogPosts.Find(id);
+            if (blogPost == null)
             {
                 return HttpNotFound();
             }
-            return View(product);
+            return View(blogPost);
         }
 
-        // POST: products/Delete/5
+        // POST: BlogPost/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            product product = db.products.Find(id);
-            db.products.Remove(product);
+            BlogPost blogPost = db.BlogPosts.Find(id);
+            db.BlogPosts.Remove(blogPost);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -122,13 +122,6 @@ namespace MotivationMinders.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        public ActionResult Search(string query)
-        {
-            /*MMEntitiesContext db = new MMEntitiesContext();*/
-            var productList = db.products.Where(a => a.name.Contains(query));
-            return View(productList);
         }
     }
 }

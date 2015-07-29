@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="mainDBModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BlogPost">
+    <Key>
+      <PropertyRef Name="postID" />
+    </Key>
+    <Property Name="postID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="datePublished" Type="datetime" Nullable="false" />
+    <Property Name="postTitle" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="text" Type="varchar(max)" Nullable="false" />
+  </EntityType>
   <EntityType Name="charm">
     <Key>
       <PropertyRef Name="CharmID" />
@@ -28,7 +37,7 @@
     <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="description" Type="nvarchar" MaxLength="150" />
-    <Property Name="price" Type="money" Nullable="false" />
+    <Property Name="price" Type="money" />
   </EntityType>
   <EntityType Name="ProductTags">
     <Key>
@@ -91,6 +100,7 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="mainDBModel1StoreContainer">
+    <EntitySet Name="BlogPost" EntityType="Self.BlogPost" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="charm" EntityType="Self.charm" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ProductImages" EntityType="Self.ProductImages" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="products" EntityType="Self.products" Schema="dbo" store:Type="Tables" />

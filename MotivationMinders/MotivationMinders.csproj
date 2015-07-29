@@ -164,6 +164,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BlogPostController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\productsController.cs" />
     <Compile Include="Controllers\ProductTagsController.cs" />
@@ -171,6 +172,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BlogPost.cs">
+      <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\charm.cs">
       <DependentUpon>MMModel.tt</DependentUpon>
     </Compile>
@@ -245,6 +249,10 @@
     <Content Include="images\lockets-edit.jpg" />
     <Content Include="images\lockets-full.jpg" />
     <Content Include="images\lockets-header.jpg" />
+    <Content Include="images\lockets\circle.png" />
+    <Content Include="images\lockets\diamond.png" />
+    <Content Include="images\lockets\heart.png" />
+    <Content Include="images\lockets\heart2.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\MM.png" />
     <Content Include="images\motivation_miners_biggerfont.jpg" />
@@ -315,6 +323,11 @@
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Build.cshtml" />
+    <Content Include="Views\BlogPost\Create.cshtml" />
+    <Content Include="Views\BlogPost\Delete.cshtml" />
+    <Content Include="Views\BlogPost\Details.cshtml" />
+    <Content Include="Views\BlogPost\Edit.cshtml" />
+    <Content Include="Views\BlogPost\Index.cshtml" />
     <None Include="Views\Home\Catalogue.cshtml" />
     <Content Include="Views\Home\Product.cshtml" />
     <Content Include="Views\products\Create.cshtml" />
