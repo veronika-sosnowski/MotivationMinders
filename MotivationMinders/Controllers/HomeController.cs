@@ -49,5 +49,11 @@ namespace MotivationMinders.Controllers
 
             return View(db.ProductImages.ToList());
         }
+        public ActionResult Checkout()
+        {
+            ViewBag.Message = "Your Checkout page.";
+
+            return View();
+        }
     }
 }
