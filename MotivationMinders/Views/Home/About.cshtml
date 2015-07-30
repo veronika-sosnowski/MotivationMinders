@@ -300,6 +300,8 @@
                 hasLocket = false;
                 /* Clears Locket */
                 document.getElementById("changeLocket").src = "";
+                /* Clears Message */
+                $("#comment").html("");
                 return false;
             });
 
@@ -337,7 +339,12 @@
             $("#cprice").html("$ " + total_price);
         }
     </script>
-
+    <script type="text/javascript">
+        function setMessage() {
+            var comment = document.getElementById('commentText');
+            $("#comment").html(comment.value);
+        }
+    </script>
 }
 
 <!-- End of the added more butts -->
@@ -437,12 +444,21 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#three">Something else</a>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#three">Write your Message</a>
                         </h4>
                     </div>
                     <div id="three" class="panel-collapse collapse">
                         <div class="panel-body">
-                            Something else! Wahoo!
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="comment">Type a personalized message here:</label>
+                                    <textarea class="form-control" rows="5" id="commentText" maxlength="20"></textarea>
+                                </div>
+                            </form>
+                            <!-- Set Message -->
+                            <button type="button" class="btn btn-default" onclick="setMessage()">
+                                OK
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -459,11 +475,15 @@
                     <div id="cart_toolbar">
                         <div id="cart_items" class="back"></div>
                     </div>
+                    <div style="text-align: center;">
+                        <p id="comment">
+                           
+                        </p>
+                    </div>
                 </div>
                 <!-- End of Cart Container -->
                 <img alt="" src="" height="650" id="changeLocket" />
             </div>
-
 
             <script language="javascript">
 
@@ -536,7 +556,6 @@
             </div>
             </div>
             <!-- End of Charm Preview -->
-
         </td>
     </tr>
 </table>
@@ -569,8 +588,7 @@
                     </span>
                     <span class="sptext">
                         <label>Price </label><label class="count" id="cprice">$ 0</label>
-                    </span>
-                
+                    </span>                
             </div>
             
             <!-- End of Items & Price -->
