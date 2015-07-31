@@ -80,6 +80,7 @@
           <Key>
             <PropertyRef Name="Email" />
           </Key>
+          <Property Name="userID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
           <Property Name="Email" Type="nvarchar" MaxLength="150" Nullable="false" />
           <Property Name="Password" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="PasswordSalt" Type="nvarchar" MaxLength="200" />
@@ -205,6 +206,7 @@
           <Property Name="Password" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="PasswordSalt" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <Property Name="Role" Type="Int32" />
+          <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <Association Name="FK__ProductIm__produ__44FF419A">
           <End Role="products" Type="Self.product" Multiplicity="1" />
@@ -247,7 +249,7 @@
             <End Role="ProductTags" EntitySet="ProductTags" />
           </AssociationSet>
           <EntitySet Name="BlogPosts" EntityType="mainDBModel1.BlogPost" />
-        </EntityContainer>
+          </EntityContainer>
         <EntityType Name="BlogPost">
           <Key>
             <PropertyRef Name="postID" />
@@ -257,7 +259,7 @@
           <Property Name="postTitle" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
           <Property Name="text" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" Type="String" />
         </EntityType>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -324,6 +326,7 @@
           <EntitySetMapping Name="SystemUsers">
             <EntityTypeMapping TypeName="mainDBModel1.SystemUser">
               <MappingFragment StoreEntitySet="SystemUser">
+                <ScalarProperty Name="userID" ColumnName="userID" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />

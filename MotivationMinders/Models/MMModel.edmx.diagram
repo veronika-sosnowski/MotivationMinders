@@ -5,17 +5,17 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="2bfa8c3157d84d268631966d4ee5dc9d" Name="Diagram1">
-        <EntityTypeShape EntityType="mainDBModel1.charm" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="mainDBModel1.ProductImage" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="mainDBModel1.product" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="mainDBModel1.ProductTag" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="mainDBModel1.Role" Width="1.5" PointX="7.5" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="mainDBModel1.Supplier" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="mainDBModel1.SystemUser" Width="1.5" PointX="5.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="mainDBModel1.charm" Width="1.5" PointX="4.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mainDBModel1.ProductImage" Width="1.5" PointX="2.625" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mainDBModel1.product" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mainDBModel1.ProductTag" Width="1.5" PointX="2.625" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="mainDBModel1.Role" Width="1.5" PointX="6.375" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="mainDBModel1.Supplier" Width="1.5" PointX="6.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="mainDBModel1.SystemUser" Width="1.5" PointX="0.5" PointY="4.125" IsExpanded="true" />
         <AssociationConnector Association="mainDBModel1.FK__ProductIm__produ__44FF419A" ManuallyRouted="false" />
         <AssociationConnector Association="mainDBModel1.FK__ProductTa__produ__4222D4EF" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="mainDBModel1.BlogPost" PointX="9.5" PointY="3.25" Width="1.5" IsExpanded="true" />
-      </Diagram>
+        <EntityTypeShape EntityType="mainDBModel1.BlogPost" PointX="4.5" PointY="2.625" Width="1.5" IsExpanded="true" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Build";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
@@ -265,11 +265,13 @@
                     // update total items
                     total_items++;
                     $("#citem").html(total_items);
+                    $("#ditem").html(total_items);
 
                     // update total price
                     var price = parseInt(ui.draggable.find(".price").html().replace("$ ", ""));
                     total_price = total_price + price;
                     $("#cprice").html("$ " + total_price);
+                    $("#dprice").html("$ " + total_price);
 
                     // expand cart items
                     if (total_items > 4) {
@@ -384,52 +386,52 @@
                             <!-- Charms -->
                             <div id="item_container">
                                 <div class="item" id="i1">
-                                    <img src="../images/CharmsDemo/charm1.png" height="85px" />
+                                    <img src="../images/CharmsDemo/charm1.png" style="height:85px" />
                                     <label class="title">Charm 1</label>
                                     <label class="price">$ 2</label>
                                 </div>
                                 <div class="item" id="i2">
-                                    <img src="../images/CharmsDemo/charm2.png" height="75px" />
+                                    <img src="../images/CharmsDemo/charm2.png" style="height:85px" />
                                     <label class="title">Charm 2</label>
                                     <label class="price">$ 2</label>
                                 </div>
                                 <div class="item" id="i3">
-                                    <img src="../images/CharmsDemo/charm3.png" height="85px" />
+                                    <img src="../images/CharmsDemo/charm3.png" style="height:85px" />
                                     <label class="title">Charm 3</label>
                                     <label class="price">$ 3</label>
                                 </div>
                                 <div class="item" id="i4">
-                                    <img src="../images/CharmsDemo/charm4.png" height="85px" />
+                                    <img src="../images/CharmsDemo/charm4.png" style="height:85px" />
                                     <label class="title">Charm 4</label>
                                     <label class="price">$ 3</label>
                                 </div>
                                 <div class="item" id="i5">
-                                    <img src="../images/CharmsDemo/charm5.png" height="85px" />
+                                    <img src="../images/CharmsDemo/charm5.png" style="height:85px" />
                                     <label class="title">Charm 5</label>
                                     <label class="price">$ 4</label>
                                 </div>
                                 <div class="item" id="i6">
-                                    <img src="../images/CharmsDemo/charm6.png" height="85px" />
+                                    <img src="../images/CharmsDemo/charm6.png" style="height:85px" />
                                     <label class="title">Charm 6</label>
                                     <label class="price">$ 4</label>
                                 </div>
                                 <div class="item" id="i7">
-                                    <img src="../images/CharmsDemo/charm7.png" height="85px" />
+                                    <img src="../images/CharmsDemo/charm7.png" style="height:85px" />
                                     <label class="title">Charm 7</label>
                                     <label class="price">$ 5</label>
                                 </div>
                                 <div class="item" id="i8">
-                                    <img src="../images/CharmsDemo/charm8.png" height="85px" />
+                                    <img src="../images/CharmsDemo/charm8.png" style="height:85px" />
                                     <label class="title">Charm 8</label>
                                     <label class="price">$ 5</label>
                                 </div>
                                 <div class="item" id="i9">
-                                    <img src="../images/CharmsDemo/charm9.png" height="85px" />
+                                    <img src="../images/CharmsDemo/charm9.png" style="height:85px" />
                                     <label class="title">Charm 9</label>
                                     <label class="price">$ 6</label>
                                 </div>
                                 <div class="item" id="i10">
-                                    <img src="../images/CharmsDemo/charm10.png" height="85px" />
+                                    <img src="../images/CharmsDemo/charm10.png" style="height:85px" />
                                     <label class="title">Charm 10</label>
                                     <label class="price">$ 6</label>
                                 </div>
@@ -554,7 +556,6 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            </div>
             <!-- End of Charm Preview -->
         </td>
     </tr>
@@ -584,10 +585,10 @@
                 
                
                     <span class="sptext">
-                        <label>Items </label><label class="count" id="citem">0</label>
+                        <label>Items </label><label class="count" id="ditem">0</label>
                     </span>
                     <span class="sptext">
-                        <label>Price </label><label class="count" id="cprice">$ 0</label>
+                        <label>Price </label><label class="count" id="dprice">$ 0</label>
                     </span>                
             </div>
             
@@ -599,9 +600,7 @@
         </div>
     </div>
 </div>
-</div>
 <!-- /Add to Cart Modal-->
-</div>
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <!-- End of the added butts -->

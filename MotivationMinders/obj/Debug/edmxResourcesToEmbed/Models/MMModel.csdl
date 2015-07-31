@@ -74,6 +74,7 @@
     <Property Name="Password" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="PasswordSalt" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="Role" Type="Int32" />
+    <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
   </EntityType>
   <Association Name="FK__ProductIm__produ__44FF419A">
     <End Role="products" Type="Self.product" Multiplicity="1" />
