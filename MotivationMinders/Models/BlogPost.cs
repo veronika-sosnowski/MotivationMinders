@@ -11,10 +11,13 @@ namespace MotivationMinders.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
     public partial class BlogPost
     {
         public int postID { get; set; }
+
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public System.DateTime datePublished { get; set; }
         public string postTitle { get; set; }
         public string text { get; set; }
