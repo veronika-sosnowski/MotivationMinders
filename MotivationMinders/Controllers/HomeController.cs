@@ -51,8 +51,6 @@ namespace MotivationMinders.Controllers
         }
         public ActionResult Checkout()
         {
-            ViewBag.Message = "Your Checkout page.";
-
             return View();
         }
     }

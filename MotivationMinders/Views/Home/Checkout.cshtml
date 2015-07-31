@@ -5,6 +5,7 @@
 }
 
 <h2>Checkout</h2>
+<h3>@ViewBag.Message</h3>
 
 <head>
 
@@ -93,17 +94,15 @@
                             </div>
                         </div>
                         <div>
-                            <input type="text" name="zip" value="" id="zip" placeholder="12345" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing Zip Code" /><label for="zip">Zip Code</label>
+                            <input type="text" name="zip" value="" id="zip" placeholder="12345" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing Zip/Postal Code" /><label for="zip">Zip Code</label>
                         </div>
                         <div>
                             <div class="country_options">
                                 <label class="country" for="country">Country</label>
                                 <div class="select">
                                     <select id="country">
-                                        <option value="1">United States</option>
-                                        <option value="2">United Kingdom</option>
-                                        <option value="3">Uganda</option>
-                                        <option value="4">Etc.</option>
+                                        <option value="1">Canada</option>
+                                        <option value="2">United States</option>
                                     </select>
                                 </div>
                             </div>
@@ -161,35 +160,35 @@
                                 <div class="expiry">
                                     <div class="month_select">
                                         <select name="exp_month" value="" id="exp_month" placeholder="" data-trigger="change" data-type="name" data-required="true" data-error-message="Enter Your Credit Card Expiration Date">
-                                            <option value="1">01 (Jan)</option>
-                                            <option value="2">02 (Feb)</option>
-                                            <option value="3">03 (Mar)</option>
-                                            <option value="4">04 (Apr)</option>
-                                            <option value="5">05 (May)</option>
-                                            <option value="6">06 (Jun)</option>
-                                            <option value="7">07 (Jul)</option>
-                                            <option value="8">08 (Aug)</option>
-                                            <option value="9">09 (Sep)</option>
-                                            <option value="10">10 (Oct)</option>
-                                            <option value="11">11 (Nov)</option>
-                                            <option value="12">12 (Dec)</option>
+                                            <option value="1">January</option>
+                                            <option value="2">February</option>
+                                            <option value="3">March</option>
+                                            <option value="4">April</option>
+                                            <option value="5">May</option>
+                                            <option value="6">June</option>
+                                            <option value="7">July</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10">October</option>
+                                            <option value="11">November</option>
+                                            <option value="12">December</option>
                                         </select>
                                     </div>
                                     <span class="divider">-</span>
                                     <div class="year_select">
                                         <select name="exp_year" value="" id="exp_year" placeholder="" data-trigger="change" data-type="name" data-required="true" data-error-message="Enter Your Credit Card Expiration Date">
                                             <option value="1">14 </option>
-                                            <option value="2">15 (Feb)</option>
-                                            <option value="3">16 (Mar)</option>
-                                            <option value="4">17 (Apr)</option>
-                                            <option value="5">18 (May)</option>
-                                            <option value="6">19 (Jun)</option>
-                                            <option value="7">20 (Jul)</option>
-                                            <option value="8">22 (Aug)</option>
-                                            <option value="9">23 (Sep)</option>
-                                            <option value="10">24 (Oct)</option>
-                                            <option value="11">25 (Nov)</option>
-                                            <option value="12">26 (Dec)</option>
+                                            <option value="2">15</option>
+                                            <option value="3">16</option>
+                                            <option value="4">17</option>
+                                            <option value="5">18</option>
+                                            <option value="6">19</option>
+                                            <option value="7">20</option>
+                                            <option value="8">22</option>
+                                            <option value="9">23</option>
+                                            <option value="10">24</option>
+                                            <option value="11">25</option>
+                                            <option value="12">26</option>
                                         </select>
                                     </div>
                                 </div>
