@@ -295,6 +295,8 @@
                 });
                 $("#citem").html("0");
                 $("#cprice").html("$ 0");
+                $("#ditem").html("0");
+                $("#dprice").html("$ 0");
                 total_items = 0;
                 total_price = 0;
                 locket_price = 0;
@@ -334,11 +336,13 @@
             // update total item
             total_items--;
             $("#citem").html(total_items);
+            $("#ditem").html(total_items);
 
             // update total price
             var price = parseInt($(el).parent().parent().find(".price").html().replace("$ ", ""));
             total_price = total_price - price;
-            $("#cprice").html("$ " + total_price);
+            $("#cprice").html("$ " + total_price.toFixed(2));
+            $("#dprice").html("$ " + total_price.toFixed(2));
         }
     </script>
     <script type="text/javascript">
@@ -385,57 +389,56 @@
                             <!-- Choose Charms -->
                             <!-- Charms -->
                             <div id="item_container">
-                                <div class="item" id="i1">
+                                <div class="item" id="Circle">
                                     <img src="../images/CharmsDemo/charm1.png" style="height:85px" />
                                     <label class="title">Charm 1</label>
                                     <label class="price">$ 2</label>
                                 </div>
-                                <div class="item" id="i2">
+                                <div class="item" id="Heart">
                                     <img src="../images/CharmsDemo/charm2.png" style="height:85px" />
                                     <label class="title">Charm 2</label>
                                     <label class="price">$ 2</label>
                                 </div>
-                                <div class="item" id="i3">
+                                <div class="item" id="Crown">
                                     <img src="../images/CharmsDemo/charm3.png" style="height:85px" />
                                     <label class="title">Charm 3</label>
                                     <label class="price">$ 3</label>
                                 </div>
-                                <div class="item" id="i4">
+                                <div class="item" id="Star">
                                     <img src="../images/CharmsDemo/charm4.png" style="height:85px" />
                                     <label class="title">Charm 4</label>
                                     <label class="price">$ 3</label>
                                 </div>
-                                <div class="item" id="i5">
+                                <div class="item" id="Anchor">
                                     <img src="../images/CharmsDemo/charm5.png" style="height:85px" />
                                     <label class="title">Charm 5</label>
                                     <label class="price">$ 4</label>
                                 </div>
-                                <div class="item" id="i6">
+                                <div class="item" id="Frozen">
                                     <img src="../images/CharmsDemo/charm6.png" style="height:85px" />
                                     <label class="title">Charm 6</label>
                                     <label class="price">$ 4</label>
                                 </div>
-                                <div class="item" id="i7">
+                                <div class="item" id="Music">
                                     <img src="../images/CharmsDemo/charm7.png" style="height:85px" />
                                     <label class="title">Charm 7</label>
                                     <label class="price">$ 5</label>
                                 </div>
-                                <div class="item" id="i8">
+                                <div class="item" id="Cat">
                                     <img src="../images/CharmsDemo/charm8.png" style="height:85px" />
                                     <label class="title">Charm 8</label>
                                     <label class="price">$ 5</label>
                                 </div>
-                                <div class="item" id="i9">
+                                <div class="item" id="Dog">
                                     <img src="../images/CharmsDemo/charm9.png" style="height:85px" />
                                     <label class="title">Charm 9</label>
                                     <label class="price">$ 6</label>
                                 </div>
-                                <div class="item" id="i10">
+                                <div class="item" id="Peace">
                                     <img src="../images/CharmsDemo/charm10.png" style="height:85px" />
                                     <label class="title">Charm 10</label>
                                     <label class="price">$ 6</label>
                                 </div>
-
 
                                 <div class="clear"></div>
                             </div>
@@ -496,9 +499,11 @@
                     total_price += locket_price;
                     current_locket = locket_price;
                     $("#cprice").html("$ " + total_price);
+                    $("#dprice").html("$ " + total_price);
                     if (hasLocket == false) {
                         total_items += 1;
                         $("#citem").html(total_items);
+                        $("#ditem").html(total_items);
                     }
                     hasLocket = true;
                 }
@@ -510,9 +515,11 @@
                     total_price += locket_price;
                     current_locket = locket_price;
                     $("#cprice").html("$ " + total_price);
+                    $("#dprice").html("$ " + total_price);
                     if (hasLocket == false) {
                         total_items += 1;
                         $("#citem").html(total_items);
+                        $("#ditem").html(total_items);
                     }
                     hasLocket = true;
                 }
@@ -524,9 +531,11 @@
                     total_price += locket_price;
                     current_locket = locket_price;
                     $("#cprice").html("$ " + total_price);
+                    $("#dprice").html("$ " + total_price);
                     if (hasLocket == false) {
                         total_items += 1;
                         $("#citem").html(total_items);
+                        $("#ditem").html(total_items);
                     }
                     hasLocket = true;
                 }
