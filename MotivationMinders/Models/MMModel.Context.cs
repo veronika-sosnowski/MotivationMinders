@@ -24,14 +24,23 @@ namespace MotivationMinders.Models
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+
+        //This is for pre-made charms to sell on the main page
         public virtual DbSet<charm> charms { get; set; }
+
         public virtual DbSet<ProductImage> ProductImages { get; set; }
+
         public virtual DbSet<product> products { get; set; }
+
         public virtual DbSet<ProductTag> ProductTags { get; set; }
+
         public virtual DbSet<Role> Roles { get; set; }
+
+        //Not currently in use
         public virtual DbSet<Supplier> Suppliers { get; set; }
+
         public virtual DbSet<SystemUser> SystemUsers { get; set; }
+
         public virtual DbSet<BlogPost> BlogPosts { get; set; }
     }
 }
