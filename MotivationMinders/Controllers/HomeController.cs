@@ -10,13 +10,19 @@ namespace MotivationMinders.Controllers
 {
     public class HomeController : Controller
     {
+      
         private MMEntitiesContext db = new MMEntitiesContext();
         public ActionResult Index()
         {
-
+            ViewBag.Message = "";
             return View();
         }
-
+        [HttpPost]
+        public ActionResult About(string thurp)
+        {
+            string data = thurp;
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "";

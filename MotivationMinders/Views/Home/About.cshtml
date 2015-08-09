@@ -281,7 +281,6 @@
                         $("#cart_items").animate({ width: "+=120" }, 'slow');
                     }
                 }
-
             });
 
 
@@ -571,6 +570,20 @@
                     </span>
                 </div>
 
+                <button onclick="myFunction()">Try it</button>
+
+                <script>
+                    function myFunction() {
+                        document.getElementById('cartprice').value = cprice.innerText;
+                        document.getElementById('cartitems').value = citem.innerText;
+                        alert(cartprice.value);
+                        
+                        sessionStorage.setItem("price", cartprice.value);
+                        sessionStorage.setItem("items", cartitems.value);
+                    }
+                </script>
+                <input type="hidden" value="PLEASE WORK OMG" id="cartprice" />
+                <input type="hidden" value="PLX" id="cartitems" />
                 <div class="clear"></div>
             </div>
             <!-- End of Charm Preview -->
@@ -579,7 +592,7 @@
 </table>
 <!-- Add to Cart -->
 @*<button type="button" class="btn btn-sample">
-        <span class="glyphicon glyphicon-shopping-cart"></span> Add to Cart
+        <span class="glyphicon glyphicon-shopping-cart"></span> Proceed to checkout
     </button>*@
 
 <!-- Add to Cart Modal -->
