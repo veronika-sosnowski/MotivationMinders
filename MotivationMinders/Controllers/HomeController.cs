@@ -10,16 +10,22 @@ namespace MotivationMinders.Controllers
 {
     public class HomeController : Controller
     {
+      
         private MMEntitiesContext db = new MMEntitiesContext();
         public ActionResult Index()
         {
-
+            ViewBag.Message = "";
             return View();
         }
-
+        [HttpPost]
+        public ActionResult About(string thurp)
+        {
+            string data = thurp;
+            return View();
+        }
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "";
 
             return View();
         }
@@ -48,6 +54,10 @@ namespace MotivationMinders.Controllers
             ViewBag.Message = "Your Build page.";
 
             return View(db.ProductImages.ToList());
+        }
+        public ActionResult Checkout()
+        {
+            return View();
         }
     }
 }

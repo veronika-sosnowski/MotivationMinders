@@ -62,6 +62,7 @@
     <EntitySetMapping Name="SystemUsers">
       <EntityTypeMapping TypeName="mainDBModel1.SystemUser">
         <MappingFragment StoreEntitySet="SystemUser">
+          <ScalarProperty Name="userID" ColumnName="userID" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
