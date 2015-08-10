@@ -513,6 +513,7 @@
 
                         sessionStorage.setItem("price", total_price);
                         sessionStorage.setItem("items", total_items);
+                        hasLocket = true;
                     }
                     else
                     {
@@ -523,10 +524,8 @@
                         $("#cprice").html("$ " + total_price);
                         $("#dprice").html("$ " + total_price);
 
-
                         sessionStorage.setItem("price", total_price);
                         sessionStorage.setItem("items", total_items);
-                        hasLocket = true;
                     }
                 }
 
@@ -544,6 +543,7 @@
 
                         sessionStorage.setItem("price", total_price);
                         sessionStorage.setItem("items", total_items);
+                        hasLocket = true;
                     }
                     else
                     {
@@ -554,10 +554,8 @@
                         $("#cprice").html("$ " + total_price);
                         $("#dprice").html("$ " + total_price);
 
-
                         sessionStorage.setItem("price", total_price);
-                        sessionStorage.setItem("items", total_items);
-                        hasLocket = true;
+                        sessionStorage.setItem("items", total_items);         
                     }
                 }
 
@@ -575,6 +573,7 @@
 
                         sessionStorage.setItem("price", total_price);
                         sessionStorage.setItem("items", total_items);
+                        hasLocket = true;
                     }
                     else {
                         total_price -= current_locket;
@@ -584,10 +583,8 @@
                         $("#cprice").html("$ " + total_price);
                         $("#dprice").html("$ " + total_price);
 
-
                         sessionStorage.setItem("price", total_price);
-                        sessionStorage.setItem("items", total_items);
-                        hasLocket = true;
+                        sessionStorage.setItem("items", total_items);           
                     }
                 }
             </script>
@@ -658,6 +655,9 @@
 
         </div>
         <div class="modal-footer">
+            <a href='@Url.Action("Checkout","Home")'>
+                <button class="btn btn-sample">Checkout</button>
+            </a>
             <button type="button" class="btn btn-sample" data-dismiss="modal">Close</button>
         </div>
     </div>
