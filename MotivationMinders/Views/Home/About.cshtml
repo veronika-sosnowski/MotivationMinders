@@ -359,7 +359,6 @@
     </script>
 }
 
-
 <!-- End of the added more butts -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -513,6 +512,7 @@
 
                         sessionStorage.setItem("price", total_price);
                         sessionStorage.setItem("items", total_items);
+                        hasLocket = true;
                     }
                     else
                     {
@@ -523,10 +523,8 @@
                         $("#cprice").html("$ " + total_price);
                         $("#dprice").html("$ " + total_price);
 
-
                         sessionStorage.setItem("price", total_price);
                         sessionStorage.setItem("items", total_items);
-                        hasLocket = true;
                     }
                 }
 
@@ -544,6 +542,7 @@
 
                         sessionStorage.setItem("price", total_price);
                         sessionStorage.setItem("items", total_items);
+                        hasLocket = true;
                     }
                     else
                     {
@@ -554,10 +553,8 @@
                         $("#cprice").html("$ " + total_price);
                         $("#dprice").html("$ " + total_price);
 
-
                         sessionStorage.setItem("price", total_price);
                         sessionStorage.setItem("items", total_items);
-                        hasLocket = true;
                     }
                 }
 
@@ -575,6 +572,7 @@
 
                         sessionStorage.setItem("price", total_price);
                         sessionStorage.setItem("items", total_items);
+                        hasLocket = true;
                     }
                     else {
                         total_price -= current_locket;
@@ -584,10 +582,8 @@
                         $("#cprice").html("$ " + total_price);
                         $("#dprice").html("$ " + total_price);
 
-
                         sessionStorage.setItem("price", total_price);
-                        sessionStorage.setItem("items", total_items);
-                        hasLocket = true;
+                        sessionStorage.setItem("items", total_items);                        
                     }
                 }
             </script>
@@ -614,21 +610,14 @@
                         <label>Price </label><label class="count" id="cprice">$ 0</label>
                     </span>
                 </div>
-                <input type="hidden" value="PLEASE WORK OMG" id="cartprice" />
-                <input type="hidden" value="PLX" id="cartitems" />
                 <div class="clear"></div>
             </div>
             <!-- End of Charm Preview -->
         </td>
     </tr>
 </table>
-<!-- Add to Cart -->
-@*<button type="button" class="btn btn-sample">
-        <span class="glyphicon glyphicon-shopping-cart"></span> Proceed to checkout
-    </button>*@
 
-<!-- Add to Cart Modal -->
-<!-- Button trigger modal -->
+
 <button type="button" class="btn btn-sample" data-toggle="modal" data-target="#addToCartModal">
     <span class="glyphicon glyphicon-shopping-cart"></span>
     View Cart
@@ -657,8 +646,13 @@
             <!-- End of Items & Price -->
 
         </div>
+       
         <div class="modal-footer">
+            <a href='@Url.Action("Checkout","Home")'>
+                <button class="btn btn-sample">Checkout</button>
+            </a>
             <button type="button" class="btn btn-sample" data-dismiss="modal">Close</button>
+        
         </div>
     </div>
 </div>
