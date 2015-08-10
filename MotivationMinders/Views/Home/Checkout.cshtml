@@ -22,6 +22,10 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
 
+    <script type="text/javascript">
+
+    </script>
+
 </head>
 <body>
     <!--  Start here -->
@@ -84,13 +88,21 @@
                             <div class="state_options">
                                 <div class="select">
                                     <select id="state">
-                                        <option value="1">Alabama</option>
-                                        <option value="2">Alaska</option>
-                                        <option value="3">Arkansas</option>
-                                        <option value="4">Etc.</option>
+                                        <option value="1">Alberta</option>
+                                        <option value="2">British Columbia</option>
+                                        <option value="3">Manitoba</option>
+                                        <option value="4">New Brunswick</option>
+                                        <option value="5">Newfoundland & Labrador</option>
+                                        <option value="6">Nova Scotia</option>
+                                        <option value="7">Northwest Territories</option>
+                                        <option value="8">Nunavut</option>
+                                        <option value="9">Ontario</option>
+                                        <option value="10">Quebec</option>
+                                        <option value="11">Saskatchewan</option>
+                                        <option value="12">Yukon</option>
                                     </select>
                                 </div>
-                                <label class="state" for="state">State</label>
+                                <label class="state" for="state">Province</label>
                             </div>
                         </div>
                         <div>
@@ -126,17 +138,28 @@
                     </div>
                 </div>
                 <div class="content" id="shipping">
-                    <form>
+                    @*<form name="selectShippingForm">
                         <div>
-                            <input type="radio" id="shipping_1" value="1" /><label for="shipping_1"> Standard Shipping <span class="price">$4.00</span></label>
+                            <input type="radio" id="shipping_1" value="4" name="selectShipping"/><label for="shipping_1"> Standard Shipping <span class="price">$4.00</span></label>
                         </div>
                         <div>
-                            <input type="radio" id="shipping_2" value="2" /><label for="shipping_2"> Express Shipping <span class="price">$8.00</span></label>
+                            <input type="radio" id="shipping_2" value="8" name="selectShipping" /><label for="shipping_2"> Express Shipping <span class="price">$8.00</span></label>
                         </div>
                         <div>
-                            <input type="radio" id="shipping_3" value="3" /><label for="shipping_3"> Overnight Shipping <span class="price">$12.00</span></label>
+                            <input type="radio" id="shipping_3" value="12" name="selectShipping" /><label for="shipping_3"> Overnight Shipping <span class="price">$12.00</span></label>
                         </div>
+                    </form>*@
+                   
+                     <!-- INSERTED HERE -->
+
+                    <form action="form_action.asp">
+                        <input type="radio" name="browser" onclick="myFunction(this.value)" value="4">Standard Shipping<br>
+                        <input type="radio" name="browser" onclick="myFunction(this.value)" value="8">Express Shipping<br>
+                        <input type="radio" name="browser" onclick="myFunction(this.value)" value="12">Overnight Shipping<br>
                     </form>
+
+                    <!-- THAT IS ALL YAY -->
+
                     <a class="continue" href="#">Continue</a>
                 </div>
                 <div class="step" id="step4">
@@ -229,12 +252,12 @@
                             </div>
                         </div>
                         <div class="totals">
-                            <span class="subtitle">Subtotal <span id="sub_price"></span></span>
-                            <span class="subtitle">Tax <span id="sub_tax"></span></span>
-                            <span class="subtitle">Shipping <span id="sub_ship"></span></span>
+                            <span class="subtitle">Subtotal <input type="text" id="subresult" size="2" readonly></span>
+                            <span class="subtitle">Tax <input type="text" id="taxresult" size="2" readonly></span>
+                            <span class="subtitle">Shipping <input type="text" id="result" size="2" readonly></span>
                         </div>
                         <div class="final">
-                            <span class="title">Total <span id="calculated_total"></span></span>
+                            <span class="title">Total <input type="text" id="calculatedresult" size="2" readonly></span>
                         </div>
                     </div>
                     </div>
@@ -255,6 +278,7 @@
                                 <span class="address"></span>
                                 <span class="location"></span>
                                 <span class="phone"></span>
+
                             </div>
                         </div>
                         <div class="payment">
@@ -273,5 +297,14 @@
                     </div>
                 </div>
             </div>
+
+    <script>
+        function myFunction(browser) {
+            document.getElementById("result").value = browser;
+        }
+    </script>
+
+
+
 
     </body>
