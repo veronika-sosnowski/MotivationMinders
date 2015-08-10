@@ -439,7 +439,6 @@ C:\Users\vsosnowski-cc\Source\Repos\MotivationMinders\MotivationMinders\bin\Micr
 C:\Users\vsosnowski-cc\Source\Repos\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\vsosnowski-cc\Source\Repos\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\vsosnowski-cc\Source\Repos\MotivationMinders\MotivationMinders\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\vsosnowski-cc\Source\Repos\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.csprojResolveAssemblyReference.cache
 C:\Users\vsosnowski-cc\Source\Repos\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.dll
 C:\Users\vsosnowski-cc\Source\Repos\MotivationMinders\MotivationMinders\obj\Debug\MotivationMinders.pdb
 C:\Users\solson-cc\Source\Repos\MotivationMinders\MotivationMinders\bin\MotivationMinders.dll.config
