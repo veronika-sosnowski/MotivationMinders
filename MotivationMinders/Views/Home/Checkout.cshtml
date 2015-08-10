@@ -24,6 +24,13 @@
 
 </head>
 <body>
+    <script type="text/javascript">
+    var price = (sessionStorage.getItem("price"));
+    $("#cprice").html("$ " + price);
+    document.write(price);
+    </script>
+
+    <div id="cprice"></div>
         <!--  Start here -->
         <div id="wrap">
             <div id="accordian">
@@ -228,8 +235,16 @@
                                 <span class="price"></span>
                             </div>
                         </div>
+                       
                         <div class="totals">
-                            <span class="subtitle">Subtotal <span id="sub_price"></span></span>
+                            <span class="subtitle">Subtotal 
+                                
+
+                             <span id="sub_price"> <script type="text/javascript">
+                                 var price = (sessionStorage.getItem("price"));
+                                 $("#cprice").html("$ " + price);
+                                 document.write(price);
+</script></span></span>
                             <span class="subtitle">Tax <span id="sub_tax"></span></span>
                             <span class="subtitle">Shipping <span id="sub_ship"></span></span>
                         </div>
