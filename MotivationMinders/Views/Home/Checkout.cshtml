@@ -78,7 +78,7 @@
                         <input type="text" name="company" value="" id="company" placeholder="Company" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="false" /><label for="Company">Company</label>
                     </div>
                     <div>
-                        <input type="text" name="address" value="" id="address" placeholder="123 Main Street" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing Address" /><label for="Address">Address</label>
+                        <input type="text" name="address1" value="" id="address1" placeholder="123 Main Street" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing Address" /><label for="Address1">Address</label>
                     </div>
                     <div>
                         <input type="text" name="city" value="" id="city" placeholder="Everytown" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing City" /><label for="city">City</label>
@@ -87,18 +87,18 @@
                         <div class="state_options">
                             <div class="select">
                                 <select id="state">
-                                    <option value="1">Alberta</option>
-                                    <option value="2">British Columbia</option>
-                                    <option value="3">Manitoba</option>
-                                    <option value="4">New Brunswick</option>
-                                    <option value="5">Newfoundland & Labrador</option>
-                                    <option value="6">Nova Scotia</option>
-                                    <option value="7">Northwest Territories</option>
-                                    <option value="8">Nunavut</option>
-                                    <option value="9">Ontario</option>
-                                    <option value="10">Quebec</option>
-                                    <option value="11">Saskatchewan</option>
-                                    <option value="12">Yukon</option>
+                                    <option value="Alberta">Alberta</option>
+                                    <option value="British Columbia">British Columbia</option>
+                                    <option value="Manitoba">Manitoba</option>
+                                    <option value="New Brunswick">New Brunswick</option>
+                                    <option value="Newfoundland & Labrador">Newfoundland & Labrador</option>
+                                    <option value="Nova Scotia">Nova Scotia</option>
+                                    <option value="Northwest Territories">Northwest Territories</option>
+                                    <option value="Nunavut">Nunavut</option>
+                                    <option value="Ontario">Ontario</option>
+                                    <option value="Quebec">Quebec</option>
+                                    <option value="Saskatchewan">Saskatchewan</option>
+                                    <option value="Yukond">Yukon</option>
                                 </select>
                             </div>
                             <label class="state" for="state">Province</label>
@@ -123,7 +123,7 @@
                         <label class="same" for="same_as_shipping">Same As Shipping Address</label><span></span>
                     </div>
                 </form>
-                <a class="continue" href="#">Continue</a>
+                <button id="confirminfo" name="confirminfo" class="btn btn-sample" onclick="passInfo();">Confirm</button>
             </div>
             <div class="step" id="step3">
                 <div class="number">
@@ -137,29 +137,14 @@
                 </div>
             </div>
             <div class="content" id="shipping">
-                @*<form name="selectShippingForm">
-                        <div>
-                            <input type="radio" id="shipping_1" value="4" name="selectShipping"/><label for="shipping_1"> Standard Shipping <span class="price">$4.00</span></label>
-                        </div>
-                        <div>
-                            <input type="radio" id="shipping_2" value="8" name="selectShipping" /><label for="shipping_2"> Express Shipping <span class="price">$8.00</span></label>
-                        </div>
-                        <div>
-                            <input type="radio" id="shipping_3" value="12" name="selectShipping" /><label for="shipping_3"> Overnight Shipping <span class="price">$12.00</span></label>
-                        </div>
-                    </form>*@
-
-                <!-- INSERTED HERE -->
 
                 <form action="form_action.asp">
-                    <input type="radio" name="browser" onclick="myFunction(this.value), calculate.click()" value="4.00">Standard Shipping<br>
-                    <input type="radio" name="browser" onclick="myFunction(this.value), calculate.click()" value="8.00">Express Shipping<br>
-                    <input type="radio" name="browser" onclick="myFunction(this.value), calculate.click()" value="12.00">Overnight Shipping<br>
+                    <input type="radio" id="StandardShipping" name="browser" onclick="myFunction(this.value), calculate.click()" value="4.00">Standard Shipping<br>
+                    <input type="radio" id="ExpressShipping" name="browser" onclick="myFunction(this.value), calculate.click()" value="8.00">Express Shipping<br>
+                    <input type="radio" id="OvernightShipping" name="browser" onclick="myFunction(this.value), calculate.click()" value="12.00">Overnight Shipping<br>
                 </form>
 
-                <!-- THAT IS ALL YAY -->
-
-                <a class="continue" href="#">Continue</a>
+                <button id="confirmshipping" name="confirmshipping" class="btn btn-sample" onclick="shippingMethod();">Confirm</button>
             </div>
             <div class="step" id="step4">
                 <div class="number">
@@ -224,7 +209,7 @@
                         </div>
                     </form>
                 </div>
-                <a class="continue" href="#">Continue</a>
+                <button id="confirmpayment" name="confirmpayment" class="btn btn-sample" onclick="confirmPayment();">Confirm</button>
 
             </div>
             <div class="step" id="step5">
@@ -274,39 +259,86 @@
                 <div class="billing">
                     <span class="title">Billing:</span>
                     <div class="address_reviewed">
-                        <span class="name"></span>
-                        <span class="address"></span>
-                        <span class="location"></span>
-                        <span class="phone"></span>
+                        <input class="form-control" id="mytext" type="text" readonly>
+                        <input class="form-control" id="finaladdress" type="text" readonly>
+                        <input class="form-control" id="finalcity" type="text" readonly>
+                        <input class="form-control" id="finalpostalcode" type="text" readonly>
                     </div>
                 </div>
+                <br /><br /><br /><br /><br /><br /><br /><br />
                 <div class="shipping">
                     <span class="title">Shipping:</span>
                     <div class="address_reviewed">
-                        <span class="name"></span>
-                        <span class="address"></span>
-                        <span class="location"></span>
-                        <span class="phone"></span>
-
+                        <input class="form-control" id="finalshipping" type="text" readonly>
                     </div>
                 </div>
                 <div class="payment">
                     <span class="title">Payment:</span>
                     <div class="payment_reviewed">
-                        <span class="method"></span>
-                        <span class="number_hidden"></span>
+                        <input class="form-control" id="paymentconfirmed" type="text" value="Please confirm payment method" readonly>
                     </div>
                 </div>
                 <div id="complete">
                     <a class="big_button" id="complete" href="#">Complete Order</a>
                     <span class="sub">By selecting this button you agree to the purchase and subsequent payment for this order.</span>
                 </div>
-
-
             </div>
         </div>
     </div>
 
+    <!-- Confirm Payment -->
+    <script>
+        function confirmPayment() {
+            var confirmed = "Confirmed!";
+            paymentconfirmed.value = confirmed;
+        }
+
+    </script>
+
+    <!-- Pass Personal Info Variables to Confirmation -->
+    <script>
+        function passInfo() {
+            var firstname = document.getElementById("first_name").value;
+            var lastname = document.getElementById("last_name").value;
+            var fullname = firstname + " " + lastname;
+            mytext.value = fullname;
+
+            var fulladdress = document.getElementById("address1").value;
+            finaladdress.value = fulladdress;
+
+            var city = document.getElementById("city").value;
+            var state = document.getElementById("state").value;
+            var fullcitystate = city + ", " + state;
+            finalcity.value = fullcitystate;
+
+            var postalcode = document.getElementById("zip").value;
+            finalpostalcode.value = postalcode;
+        }
+    </script>
+
+    <!-- Pass Shipping Method to Confirmation -->
+    <script>
+        function shippingMethod() {
+            var shippingMethod;
+
+            if (document.getElementById("StandardShipping").checked)
+            {
+                shippingMethod = "Standard Shipping";
+            }
+            if (document.getElementById("ExpressShipping").checked)
+            {
+                shippingMethod = "Express Shipping";
+            }
+            if (document.getElementById("OvernightShipping").checked)
+            {
+                shippingMethod = "Overnight Shipping";
+            }
+
+            finalshipping.value = shippingMethod;
+        }
+    </script>
+
+    <!-- Calculations -->
     <script>
         var price = (sessionStorage.getItem("price"));
         document.getElementById("cart").value = price;
