@@ -15,6 +15,7 @@ namespace MotivationMinders.Controllers
         private MMEntitiesContext db = new MMEntitiesContext();
 
         // GET: products
+        [Authorize]
         public ActionResult Index()
         {
             //I AM MAKING A CHANGE.
@@ -43,8 +44,6 @@ namespace MotivationMinders.Controllers
         }
 
         // POST: products/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "productID,name,type,description,price")] product product)
@@ -75,8 +74,6 @@ namespace MotivationMinders.Controllers
         }
 
         // POST: products/Tags/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "productID,name,type,description,price")] product product)

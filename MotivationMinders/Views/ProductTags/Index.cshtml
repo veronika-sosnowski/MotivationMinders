@@ -4,7 +4,8 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@if(Roles.IsUserInRole("Admin"))
+{
 <h2>Index</h2>
 
 <p>
@@ -42,3 +43,7 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
+}
+<p>
+</p>
+<p>Regular users are not allowed to edit products</p>
