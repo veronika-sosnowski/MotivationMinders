@@ -1,0 +1,41 @@
+﻿@{
+    /// ViewBag.Title = "Administration";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
+
+    var roleItems = Roles.GetAllRoles().Select(role => new SelectListItem
+    {
+        Text = role
+    });
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1>Edit Roles</h1>
+        <form action="editRole" method="post" />
+        <p>
+            <label for="roleName">Role Name:</label>
+            @Html.TextBox("roleName")
+            <input type="submit" id="createRole" name="createRole" value="Create Role" />
+        </p>
+
+        <p>
+            @Html.DropDownList("selectRoleName", roleItems)
+            <input type="submit" id="deleteRole" name="deleteRole" value="Delete Role" />
+        </p>
+    </div>
+
+    <h1>Assign Roles</h1>
+    <form action="manageUserRole" method="post">
+        <label for="selectUserName">Users: </label>
+       @foreach (var item in )
+
+    </form>
+</body>
+</html>
