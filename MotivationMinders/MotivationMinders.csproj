@@ -178,11 +178,41 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>DefaultModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>DefaultModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>DefaultModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>DefaultModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\BlogPost.cs">
       <DependentUpon>MMModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\charm.cs">
       <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>DefaultModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DefaultModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DefaultModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DefaultModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DefaultModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DefaultModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DefaultModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\MMModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -221,6 +251,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Views\Butts\ButtsController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\mainDB.mdf" />
@@ -316,6 +347,25 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MMModel.edmx</DependentUpon>
       <LastGenOutput>MMModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Views\Butts\index.cshtml" />
+    <Content Include="Views\Butts\editRole.cshtml" />
+    <EntityDeploy Include="Models\DefaultModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DefaultModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\DefaultModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DefaultModel.edmx</DependentUpon>
+      <LastGenOutput>DefaultModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\DefaultModel.edmx.diagram">
+      <DependentUpon>DefaultModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\DefaultModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DefaultModel.edmx</DependentUpon>
+      <LastGenOutput>DefaultModel.cs</LastGenOutput>
     </Content>
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.5.min.js" />
