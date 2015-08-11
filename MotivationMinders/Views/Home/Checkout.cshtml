@@ -21,10 +21,6 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript">
-
-    </script>
-
 </head>
 <body>
     <!--  Start here -->
@@ -49,10 +45,11 @@
                     <button class="login">Login</button>
                     <button class="create">Create Account</button>
                 </form>
-                <a class="continue" href="#">Continue</a>
+                <a class="continue" href="#step2">Continue</a>
             </div>
             <div class="step" id="step2">
                 <div class="number">
+                    <a name="step2"></a>
                     <span>2</span>
                 </div>
                 <div class="title">
@@ -123,10 +120,11 @@
                         <label class="same" for="same_as_shipping">Same As Shipping Address</label><span></span>
                     </div>
                 </form>
-                <button id="confirminfo" name="confirminfo" class="btn btn-sample" onclick="passInfo();">Confirm</button>
+                <a href="#step3"><button id="confirminfo" name="confirminfo" class="btn btn-sample" onclick="passInfo();">Confirm</button></a>
             </div>
             <div class="step" id="step3">
                 <div class="number">
+                    <a name="step3"></a>
                     <span>3</span>
                 </div>
                 <div class="title">
@@ -144,10 +142,11 @@
                     <input type="radio" id="OvernightShipping" name="browser" onclick="myFunction(this.value), calculate.click()" value="12.00">Overnight Shipping<br>
                 </form>
 
-                <button id="confirmshipping" name="confirmshipping" class="btn btn-sample" onclick="shippingMethod();">Confirm</button>
+                <a href="#step4"><button id="confirmshipping" name="confirmshipping" class="btn btn-sample" onclick="shippingMethod();">Confirm</button></a>
             </div>
             <div class="step" id="step4">
                 <div class="number">
+                    <a name="step4"></a>
                     <span>4</span>
                 </div>
                 <div class="title">
@@ -209,11 +208,12 @@
                         </div>
                     </form>
                 </div>
-                <button id="confirmpayment" name="confirmpayment" class="btn btn-sample" onclick="confirmPayment();">Confirm</button>
+                <a href="#step5"><button id="confirmpayment" name="confirmpayment" class="btn btn-sample" onclick="confirmPayment();">Confirm</button></a>
 
             </div>
             <div class="step" id="step5">
                 <div class="number">
+                    <a name="step5"></a>
                     <span>5</span>
                 </div>
                 <div class="title">
@@ -275,13 +275,43 @@
                 <div class="payment">
                     <span class="title">Payment:</span>
                     <div class="payment_reviewed">
-                        <input class="form-control" id="paymentconfirmed" type="text" value="Please confirm payment method" readonly>
+                        <input class="form-control" id="paymentconfirmed" type="text" value="Please confirm payment information" readonly>
                     </div>
                 </div>
                 <div id="complete">
-                    <a class="big_button" id="complete" href="#">Complete Order</a>
+                    
+                    <button type="button" class="btn btn-sample btn-lg" data-toggle="modal" data-target="#orderComplete">Complete Order</button>
                     <span class="sub">By selecting this button you agree to the purchase and subsequent payment for this order.</span>
                 </div>
+
+
+                <!-- Order Complete -->
+                <div class="container">
+                    <!-- Modal -->
+                    <div class="modal fade" id="orderComplete" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Order Complete</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Thank you for your order!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href='@Url.Action("About","Home")'><button type="button" class="btn btn-default">Back</button></a>
+</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Order Complete -->
+
+
             </div>
         </div>
     </div>
@@ -356,7 +386,6 @@
         }
         window.onload = aFunctionByMe;
     </script>
-
 
     <div style="visibility:hidden">
         <input id="calculate" type="button" onclick="myOtherFunction()" />
