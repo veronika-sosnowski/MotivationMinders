@@ -240,7 +240,7 @@
         var current_locket = 0;
         var pendant = "Your charm contains: ";
         var hasLocket = false;
-
+        sessionStorage.clear();
         $(document).ready(function () {
 
             $(".item").draggable({
@@ -276,6 +276,8 @@
                     $("#cprice").html("$ " + total_price);
                     $("#dprice").html("$ " + total_price);
 
+                    sessionStorage.setItem("price", total_price);
+                    sessionStorage.setItem("items", total_items);
                     // expand cart items
                     if (total_items > 4) {
                         $("#cart_items").animate({ width: "+=120" }, 'slow');
@@ -311,17 +313,12 @@
                 /* Clears Message */
                 $("#comment").html("");
                 return false;
+
+                sessionStorage.setItem("price",0);
+                sessionStorage.setItem("items",0);
             });
 
             $("#btn_cart").click(function () {
-                //// update total items
-                //total_items++;
-                //$("#citem").html(total_items);
-
-                //// update total price
-                //var price = parseInt(ui.draggable.find(".price").html().replace("$ ", ""));
-                //total_price = total_price + price;
-                //$("#cprice").html("$ " + total_price);
                 pendant += ".";
                 return false;
             });
@@ -346,8 +343,12 @@
             // update total price
             var price = parseInt($(el).parent().parent().find(".price").html().replace("$ ", ""));
             total_price = total_price - price;
-            $("#cprice").html("$ " + total_price.toFixed(2));
-            $("#dprice").html("$ " + total_price.toFixed(2));
+            $("#cprice").html("$ " + total_price);
+            $("#dprice").html("$ " + total_price);
+
+
+            sessionStorage.setItem("price", total_price);
+            sessionStorage.setItem("items", total_items);
         }
     </script>
     <script type="text/javascript">
@@ -500,50 +501,91 @@
 
                 function ShowCircle() {
                     document.getElementById("changeLocket").src = "../images/lockets/circle.png";
-                    total_price -= current_locket;
-                    locket_price = 27.95;
-                    total_price += locket_price;
-                    current_locket = locket_price;
-                    $("#cprice").html("$ " + total_price);
-                    $("#dprice").html("$ " + total_price);
                     if (hasLocket == false) {
                         total_items += 1;
                         $("#citem").html(total_items);
                         $("#ditem").html(total_items);
+                        locket_price = 33.95;
+                        total_price += locket_price;
+                        current_locket = locket_price;
+                        $("#cprice").html("$ " + total_price);
+                        $("#dprice").html("$ " + total_price);
+
+                        sessionStorage.setItem("price", total_price);
+                        sessionStorage.setItem("items", total_items);
+                        hasLocket = true;
                     }
-                    hasLocket = true;
+                    else
+                    {
+                        total_price -= current_locket;
+                        locket_price = 27.95;
+                        total_price += locket_price;
+                        current_locket = locket_price;
+                        $("#cprice").html("$ " + total_price);
+                        $("#dprice").html("$ " + total_price);
+
+                        sessionStorage.setItem("price", total_price);
+                        sessionStorage.setItem("items", total_items);
+                    }
                 }
 
                 function ShowHeart() {
                     document.getElementById("changeLocket").src = "../images/lockets/heart2.png";
-                    total_price -= current_locket;
-                    locket_price = 29.95;
-                    total_price += locket_price;
-                    current_locket = locket_price;
-                    $("#cprice").html("$ " + total_price);
-                    $("#dprice").html("$ " + total_price);
                     if (hasLocket == false) {
                         total_items += 1;
                         $("#citem").html(total_items);
                         $("#ditem").html(total_items);
+                        locket_price = 33.95;
+                        total_price += locket_price;
+                        current_locket = locket_price;
+                        $("#cprice").html("$ " + total_price);
+                        $("#dprice").html("$ " + total_price);
+
+                        sessionStorage.setItem("price", total_price);
+                        sessionStorage.setItem("items", total_items);
+                        hasLocket = true;
                     }
-                    hasLocket = true;
+                    else
+                    {
+                        total_price -= current_locket;
+                        locket_price = 29.95;
+                        total_price += locket_price;
+                        current_locket = locket_price;
+                        $("#cprice").html("$ " + total_price);
+                        $("#dprice").html("$ " + total_price);
+
+                        sessionStorage.setItem("price", total_price);
+                        sessionStorage.setItem("items", total_items);         
+                    }
                 }
 
                 function ShowDiamond() {
                     document.getElementById("changeLocket").src = "../images/lockets/diamond.png";
-                    total_price -= current_locket;
-                    locket_price = 33.95;
-                    total_price += locket_price;
-                    current_locket = locket_price;
-                    $("#cprice").html("$ " + total_price);
-                    $("#dprice").html("$ " + total_price);
                     if (hasLocket == false) {
                         total_items += 1;
                         $("#citem").html(total_items);
                         $("#ditem").html(total_items);
+                        locket_price = 33.95;
+                        total_price += locket_price;
+                        current_locket = locket_price;
+                        $("#cprice").html("$ " + total_price);
+                        $("#dprice").html("$ " + total_price);
+
+                        sessionStorage.setItem("price", total_price);
+                        sessionStorage.setItem("items", total_items);
+                        hasLocket = true;
                     }
-                    hasLocket = true;
+                    else {
+                        total_price -= current_locket;
+                        locket_price = 33.95;
+                        total_price += locket_price;
+                        current_locket = locket_price;
+                        $("#cprice").html("$ " + total_price);
+                        $("#dprice").html("$ " + total_price);
+
+                        sessionStorage.setItem("price", total_price);
+                        sessionStorage.setItem("items", total_items);           
+                    }
                 }
             </script>
         </div>
@@ -569,19 +611,6 @@
                         <label>Price </label><label class="count" id="cprice">$ 0</label>
                     </span>
                 </div>
-
-                <button onclick="myFunction()">Try it</button>
-
-                <script>
-                    function myFunction() {
-                        document.getElementById('cartprice').value = cprice.innerText;
-                        document.getElementById('cartitems').value = citem.innerText;
-                        alert(cartprice.value);
-                        
-                        sessionStorage.setItem("price", cartprice.value);
-                        sessionStorage.setItem("items", cartitems.value);
-                    }
-                </script>
                 <input type="hidden" value="PLEASE WORK OMG" id="cartprice" />
                 <input type="hidden" value="PLX" id="cartitems" />
                 <div class="clear"></div>
@@ -626,6 +655,9 @@
 
         </div>
         <div class="modal-footer">
+            <a href='@Url.Action("Checkout","Home")'>
+                <button class="btn btn-sample">Checkout</button>
+            </a>
             <button type="button" class="btn btn-sample" data-dismiss="modal">Close</button>
         </div>
     </div>

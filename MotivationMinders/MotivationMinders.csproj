@@ -170,19 +170,42 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AspNetRolesController.cs" />
     <Compile Include="Controllers\BlogPostController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\productsController.cs" />
     <Compile Include="Controllers\ProductTagsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>MMAdminModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>MMAdminModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\BlogPost.cs">
       <DependentUpon>MMModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\charm.cs">
       <DependentUpon>MMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MMAdminModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MMAdminModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MMAdminModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MMAdminModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MMAdminModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MMAdminModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\MMModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -242,7 +265,6 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Icon.png" />
-    <Content Include="images\breastcancer.jpg" />
     <Content Include="images\cart.png" />
     <Content Include="images\CharmsDemo\charm1.png" />
     <Content Include="images\CharmsDemo\charm10.png" />
@@ -318,6 +340,23 @@
       <DependentUpon>MMModel.edmx</DependentUpon>
       <LastGenOutput>MMModel.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Models\MMAdminModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MMAdminModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\MMAdminModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MMAdminModel.edmx</DependentUpon>
+      <LastGenOutput>MMAdminModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\MMAdminModel.edmx.diagram">
+      <DependentUpon>MMAdminModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\MMAdminModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MMAdminModel.edmx</DependentUpon>
+      <LastGenOutput>MMAdminModel.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.5.min.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
@@ -372,6 +411,11 @@
     <Content Include="Views\BlogPost\Details.cshtml" />
     <Content Include="Views\BlogPost\Edit.cshtml" />
     <Content Include="Views\BlogPost\Index.cshtml" />
+    <Content Include="Views\AspNetRoles\Create.cshtml" />
+    <Content Include="Views\AspNetRoles\Delete.cshtml" />
+    <Content Include="Views\AspNetRoles\Details.cshtml" />
+    <Content Include="Views\AspNetRoles\Edit.cshtml" />
+    <Content Include="Views\AspNetRoles\Index.cshtml" />
     <None Include="Views\Home\Catalogue.cshtml" />
     <Content Include="Views\Home\Product.cshtml" />
     <Content Include="Views\products\Create.cshtml" />
@@ -386,8 +430,11 @@
     <Content Include="Views\ProductTags\Index.cshtml" />
     <Content Include="Views\products\Search.cshtml" />
     <Content Include="Views\Home\Checkout.cshtml" />
-    <Content Include="Views\Home\FAQ.cshtml" />
-    <Content Include="Views\Home\Error404.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -396,7 +443,9 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Test\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

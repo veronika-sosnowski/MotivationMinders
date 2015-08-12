@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Checkout";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -10,7 +9,7 @@
 <head>
 
 
-    
+
     <meta charset="UTF-8" />
     <title>
         Sample Page by Designscrazed.com
@@ -25,253 +24,370 @@
 </head>
 <body>
     <!--  Start here -->
-        <div id="wrap">
-            <div id="accordian">
-                <div class="step" id="step1">
-                    <div class="number">
-                        <span>1</span>
-                    </div>
-                    <div class="title">
-                        <h1>Email Address</h1>
-                    </div>
-                    <div class="modify">
-                        <i class="fa fa-plus-circle"></i>
-                    </div>
+    <div id="wrap">
+        <div id="accordian">
+            <div class="step" id="step1">
+                <div class="number">
+                    <span>1</span>
                 </div>
-                <div class="content" id="email">
+                <div class="title">
+                    <h1>Email Address</h1>
+                </div>
+                <div class="modify">
+                    <i class="fa fa-plus-circle"></i>
+                </div>
+            </div>
+            <div class="content" id="email">
+                <form class="go-right">
+                    <div>
+                        <input type="email" name="email" value="" id="email-address" placeholder="Email Address" data-trigger="change" data-validation-minlength="1" data-type="email" data-required="true" data-error-message="Enter a valid email address." /><label for="email">Email Address</label>
+                    </div>
+                    <button class="login">Login</button>
+                    <button class="create">Create Account</button>
+                </form>
+                <a class="continue" href="#step2">Continue</a>
+            </div>
+            <div class="step" id="step2">
+                <div class="number">
+                    <a name="step2"></a>
+                    <span>2</span>
+                </div>
+                <div class="title">
+                    <h1>Billing Information</h1>
+                </div>
+                <div class="modify">
+                    <i class="fa fa-plus-circle"></i>
+                </div>
+            </div>
+            <div class="content" id="address">
+                <form class="go-right">
+                    <div>
+                        <input type="text" name="first_name" value="" id="first_name" placeholder="John" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Enter Your First Name" /><label for="first_name">First Name</label>
+                    </div>
+                    <div>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" value="" id="last_name" placeholder="Smith" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Enter Your Last Name" /><label for="last_name">Last Name</label>
+                    </div>
+                    <div>
+                        <input type="text" name="telephone" value="" id="telephone" placeholder="(555)-867-5309" data-trigger="change" data-validation-minlength="1" data-type="number" data-required="true" data-error-message="Enter Your Telephone Number" /><label for="telephone">Telephone</label>
+                    </div>
+                    <div>
+                        <input type="text" name="company" value="" id="company" placeholder="Company" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="false" /><label for="Company">Company</label>
+                    </div>
+                    <div>
+                        <input type="text" name="address1" value="" id="address1" placeholder="123 Main Street" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing Address" /><label for="Address1">Address</label>
+                    </div>
+                    <div>
+                        <input type="text" name="city" value="" id="city" placeholder="Everytown" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing City" /><label for="city">City</label>
+                    </div>
+                    <div>
+                        <div class="state_options">
+                            <div class="select">
+                                <select id="state">
+                                    <option value="Alberta">Alberta</option>
+                                    <option value="British Columbia">British Columbia</option>
+                                    <option value="Manitoba">Manitoba</option>
+                                    <option value="New Brunswick">New Brunswick</option>
+                                    <option value="Newfoundland & Labrador">Newfoundland & Labrador</option>
+                                    <option value="Nova Scotia">Nova Scotia</option>
+                                    <option value="Northwest Territories">Northwest Territories</option>
+                                    <option value="Nunavut">Nunavut</option>
+                                    <option value="Ontario">Ontario</option>
+                                    <option value="Quebec">Quebec</option>
+                                    <option value="Saskatchewan">Saskatchewan</option>
+                                    <option value="Yukond">Yukon</option>
+                                </select>
+                            </div>
+                            <label class="state" for="state">Province</label>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text" name="zip" value="" id="zip" placeholder="12345" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing Zip/Postal Code" /><label for="zip">Zip Code</label>
+                    </div>
+                    <div>
+                        <div class="country_options">
+                            <label class="country" for="country">Country</label>
+                            <div class="select">
+                                <select id="country">
+                                    <option value="1">Canada</option>
+                                    <option value="2">United States</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <label class="same" for="same_as_shipping">Same As Shipping Address</label><span></span>
+                    </div>
+                </form>
+                <a href="#step3"><button id="confirminfo" name="confirminfo" class="btn btn-sample" onclick="passInfo();">Confirm</button></a>
+            </div>
+            <div class="step" id="step3">
+                <div class="number">
+                    <a name="step3"></a>
+                    <span>3</span>
+                </div>
+                <div class="title">
+                    <h1>Shipping Information</h1>
+                </div>
+                <div class="modify">
+                    <i class="fa fa-plus-circle"></i>
+                </div>
+            </div>
+            <div class="content" id="shipping">
+
+                <form action="form_action.asp">
+                    <input type="radio" id="StandardShipping" name="browser" onclick="myFunction(this.value), calculate.click()" value="4.00">Standard Shipping<br>
+                    <input type="radio" id="ExpressShipping" name="browser" onclick="myFunction(this.value), calculate.click()" value="8.00">Express Shipping<br>
+                    <input type="radio" id="OvernightShipping" name="browser" onclick="myFunction(this.value), calculate.click()" value="12.00">Overnight Shipping<br>
+                </form>
+
+                <a href="#step4"><button id="confirmshipping" name="confirmshipping" class="btn btn-sample" onclick="shippingMethod();">Confirm</button></a>
+            </div>
+            <div class="step" id="step4">
+                <div class="number">
+                    <a name="step4"></a>
+                    <span>4</span>
+                </div>
+                <div class="title">
+                    <h1>Payment Information</h1>
+                </div>
+                <div class="modify">
+                    <i class="fa fa-plus-circle"></i>
+                </div>
+            </div>
+            <div class="content" id="payment">
+                <div class="left credit_card">
                     <form class="go-right">
                         <div>
-                            <input type="email" name="email" value="" id="email-address" placeholder="Email Address" data-trigger="change" data-validation-minlength="1" data-type="email" data-required="true" data-error-message="Enter a valid email address." /><label for="email">Email Address</label>
-                        </div>
-                        <button class="login">Login</button>
-                        <button class="create">Create Account</button>
-                    </form>
-                    <a class="continue" href="#">Continue</a>
-                </div>
-                <div class="step" id="step2">
-                    <div class="number">
-                        <span>2</span>
-                    </div>
-                    <div class="title">
-                        <h1>Billing Information</h1>
-                    </div>
-                    <div class="modify">
-                        <i class="fa fa-plus-circle"></i>
-                    </div>
-                </div>
-                <div class="content" id="address">
-                    <form class="go-right">
-                        <div>
-                            <input type="text" name="first_name" value="" id="first_name" placeholder="John" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Enter Your First Name" /><label for="first_name">First Name</label>
+                            <input type="text" name="card_number" value="" id="card_number" placeholder="xxxx-xxxx-xxxx-xxxx" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Enter Your Credit Card Number" /><label for="card_number">Card Number</label>
                         </div>
                         <div>
-                            <label for="last_name">Last Name</label>
-                            <input type="text" name="last_name" value="" id="last_name" placeholder="Smith" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Enter Your Last Name" /><label for="last_name">Last Name</label>
-                        </div>
-                        <div>
-                            <input type="text" name="telephone" value="" id="telephone" placeholder="(555)-867-5309" data-trigger="change" data-validation-minlength="1" data-type="number" data-required="true" data-error-message="Enter Your Telephone Number" /><label for="telephone">Telephone</label>
-                        </div>
-                        <div>
-                            <input type="text" name="company" value="" id="company" placeholder="Company" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="false" /><label for="Company">Company</label>
-                        </div>
-                        <div>
-                            <input type="text" name="address" value="" id="address" placeholder="123 Main Street" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing Address" /><label for="Address">Address</label>
-                        </div>
-                        <div>
-                            <input type="text" name="city" value="" id="city" placeholder="Everytown" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing City" /><label for="city">City</label>
-                        </div>
-                        <div>
-                            <div class="state_options">
-                                <div class="select">
-                                    <select id="state">
-                                        <option value="1">Alabama</option>
-                                        <option value="2">Alaska</option>
-                                        <option value="3">Arkansas</option>
-                                        <option value="4">Etc.</option>
+                            <div class="expiry">
+                                <div class="month_select">
+                                    <select name="exp_month" value="" id="exp_month" placeholder="" data-trigger="change" data-type="name" data-required="true" data-error-message="Enter Your Credit Card Expiration Date">
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                        <option value="6">June</option>
+                                        <option value="7">July</option>
+                                        <option value="8">August</option>
+                                        <option value="9">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
                                     </select>
                                 </div>
-                                <label class="state" for="state">State</label>
-                            </div>
-                        </div>
-                        <div>
-                            <input type="text" name="zip" value="" id="zip" placeholder="12345" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing Zip/Postal Code" /><label for="zip">Zip Code</label>
-                        </div>
-                        <div>
-                            <div class="country_options">
-                                <label class="country" for="country">Country</label>
-                                <div class="select">
-                                    <select id="country">
-                                        <option value="1">Canada</option>
-                                        <option value="2">United States</option>
+                                <span class="divider">-</span>
+                                <div class="year_select">
+                                    <select name="exp_year" value="" id="exp_year" placeholder="" data-trigger="change" data-type="name" data-required="true" data-error-message="Enter Your Credit Card Expiration Date">
+                                        <option value="1">14 </option>
+                                        <option value="2">15</option>
+                                        <option value="3">16</option>
+                                        <option value="4">17</option>
+                                        <option value="5">18</option>
+                                        <option value="6">19</option>
+                                        <option value="7">20</option>
+                                        <option value="8">22</option>
+                                        <option value="9">23</option>
+                                        <option value="10">24</option>
+                                        <option value="11">25</option>
+                                        <option value="12">26</option>
                                     </select>
                                 </div>
                             </div>
+                            <label class="exp_date" for="Exp_Date">Exp Date</label>
                         </div>
-                        <div>
-                            <input type="checkbox" />
-                            <label class="same" for="same_as_shipping">Same As Shipping Address</label><span></span>
+                        <div class="sec_num">
+                            <div>
+                                <input type="text" name="ccv" value="" id="ccv" placeholder="123" data-trigger="change" data-validation-minlength="3" data-type="name" data-required="true" data-error-message="Enter Your Card Security Code" />
+                                <label for="ccv">Security Code</label>
+                            </div>
                         </div>
                     </form>
-                    <a class="continue" href="#">Continue</a>
                 </div>
-                <div class="step" id="step3">
-                    <div class="number">
-                        <span>3</span>
-                    </div>
-                    <div class="title">
-                        <h1>Shipping Information</h1>
-                    </div>
-                    <div class="modify">
-                        <i class="fa fa-plus-circle"></i>
-                    </div>
-                </div>
-                <div class="content" id="shipping">
-                    <form>
-                        <div>
-                            <input type="radio" id="shipping_1" value="1" /><label for="shipping_1"> Standard Shipping <span class="price">$4.00</span></label>
-                        </div>
-                        <div>
-                            <input type="radio" id="shipping_2" value="2" /><label for="shipping_2"> Express Shipping <span class="price">$8.00</span></label>
-                        </div>
-                        <div>
-                            <input type="radio" id="shipping_3" value="3" /><label for="shipping_3"> Overnight Shipping <span class="price">$12.00</span></label>
-                        </div>
-                    </form>
-                    <a class="continue" href="#">Continue</a>
-                </div>
-                <div class="step" id="step4">
-                    <div class="number">
-                        <span>4</span>
-                    </div>
-                    <div class="title">
-                        <h1>Payment Information</h1>
-                    </div>
-                    <div class="modify">
-                        <i class="fa fa-plus-circle"></i>
-                    </div>
-                </div>
-                <div class="content" id="payment">
-                    <div class="left credit_card">
-                        <form class="go-right">
-                            <div>
-                                <input type="text" name="card_number" value="" id="card_number" placeholder="xxxx-xxxx-xxxx-xxxx" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Enter Your Credit Card Number" /><label for="card_number">Card Number</label>
-                            </div>
-                            <div>
-                                <div class="expiry">
-                                    <div class="month_select">
-                                        <select name="exp_month" value="" id="exp_month" placeholder="" data-trigger="change" data-type="name" data-required="true" data-error-message="Enter Your Credit Card Expiration Date">
-                                            <option value="1">January</option>
-                                            <option value="2">February</option>
-                                            <option value="3">March</option>
-                                            <option value="4">April</option>
-                                            <option value="5">May</option>
-                                            <option value="6">June</option>
-                                            <option value="7">July</option>
-                                            <option value="8">August</option>
-                                            <option value="9">September</option>
-                                            <option value="10">October</option>
-                                            <option value="11">November</option>
-                                            <option value="12">December</option>
-                                        </select>
-                                    </div>
-                                    <span class="divider">-</span>
-                                    <div class="year_select">
-                                        <select name="exp_year" value="" id="exp_year" placeholder="" data-trigger="change" data-type="name" data-required="true" data-error-message="Enter Your Credit Card Expiration Date">
-                                            <option value="1">14 </option>
-                                            <option value="2">15</option>
-                                            <option value="3">16</option>
-                                            <option value="4">17</option>
-                                            <option value="5">18</option>
-                                            <option value="6">19</option>
-                                            <option value="7">20</option>
-                                            <option value="8">22</option>
-                                            <option value="9">23</option>
-                                            <option value="10">24</option>
-                                            <option value="11">25</option>
-                                            <option value="12">26</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <label class="exp_date" for="Exp_Date">Exp Date</label>
-                            </div>
-                            <div class="sec_num">
-                                <div>
-                                    <input type="text" name="ccv" value="" id="ccv" placeholder="123" data-trigger="change" data-validation-minlength="3" data-type="name" data-required="true" data-error-message="Enter Your Card Security Code" />
-                                    <label for="ccv">Security Code</label>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <a class="continue" href="#">Continue</a>
+                <a href="#step5"><button id="confirmpayment" name="confirmpayment" class="btn btn-sample" onclick="confirmPayment();">Confirm</button></a>
 
+            </div>
+            <div class="step" id="step5">
+                <div class="number">
+                    <a name="step5"></a>
+                    <span>5</span>
                 </div>
-                <div class="step" id="step5">
-                    <div class="number">
-                        <span>5</span>
-                    </div>
-                    <div class="title">
-                        <h1>Finalize Order</h1>
-                    </div>
-                    <div class="modify">
-                        <i class="fa fa-plus-circle"></i>
-                    </div>
+                <div class="title">
+                    <h1>Finalize Order</h1>
                 </div>
-                <div class="content" id="final_products">
-                    <div class="left" id="ordered">
-                        <div class="products">
-                            <div class="product_image">
-                               
-                            </div>
-                            <div class="product_details">
-                                <span class="product_name"></span>
-                                <span class="quantity"></span>
-                                <span class="price"></span>
-                            </div>
+                <div class="modify">
+                    <i class="fa fa-plus-circle"></i>
+                </div>
+            </div>
+            <div class="content" id="final_products">
+                <div class="left" id="ordered">
+                    <div class="products">
+                        <div class="product_image">
+
                         </div>
-                        <div class="totals">
-                            <span class="subtitle">Subtotal <span id="sub_price"></span></span>
-                            <span class="subtitle">Tax <span id="sub_tax"></span></span>
-                            <span class="subtitle">Shipping <span id="sub_ship"></span></span>
-                        </div>
-                        <div class="final">
-                            <span class="title">Total <span id="calculated_total"></span></span>
+                        <div class="product_details">
+                            <span class="product_name"></span>
+                            <span class="quantity"></span>
+                            <span class="price"></span>
                         </div>
                     </div>
+                    <div class="totals">
+                        <span class="subtitle">
+                            Subtotal: $
+
+                            <input type="text" id="cart" size="5" readonly>
+                            <script type="text/javascript">
+                                var price = (sessionStorage.getItem("price"));
+                                document.getElementById("cart").value = price;
+
+                            </script>
+                        
+                        </span>
+                        <span class="subtitle">Tax: $<input type="text" id="taxresult" size="5" readonly></span>
+                        <span class="subtitle">Shipping: $<input type="text" id="result" size="5" readonly></span>
                     </div>
-                    <div class="right" id="reviewed">
-                        <div class="billing">
-                            <span class="title">Billing:</span>
-                            <div class="address_reviewed">
-                                <span class="name"></span>
-                                <span class="address"></span>
-                                <span class="location"></span>
-                                <span class="phone"></span>
-                            </div>
-                        </div>
-                        <div class="shipping">
-                            <span class="title">Shipping:</span>
-                            <div class="address_reviewed">
-                                <span class="name"></span>
-                                <span class="address"></span>
-                                <span class="location"></span>
-                                <span class="phone"></span>
-                            </div>
-                        </div>
-                        <div class="payment">
-                            <span class="title">Payment:</span>
-                            <div class="payment_reviewed">
-                                <span class="method"></span>
-                                <span class="number_hidden"></span>
-                            </div>
-                        </div>
-                        <div id="complete">
-                            <a class="big_button" id="complete" href="#">Complete Order</a>
-                            <span class="sub">By selecting this button you agree to the purchase and subsequent payment for this order.</span>
-                        </div>
-
-
+                    <div class="final">
+                        <span class="title">Total: <input type="text" id="calculatedresult" size="5" readonly></span>
                     </div>
                 </div>
             </div>
+            <div class="right" id="reviewed">
+                <div class="billing">
+                    <span class="title">Billing:</span>
+                    <div class="address_reviewed">
+                        <input class="form-control" id="mytext" type="text" readonly>
+                        <input class="form-control" id="finaladdress" type="text" readonly>
+                        <input class="form-control" id="finalcity" type="text" readonly>
+                        <input class="form-control" id="finalpostalcode" type="text" readonly>
+                    </div>
+                </div>
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                <div class="shipping">
+                    <span class="title">Shipping:</span>
+                    <div class="address_reviewed">
+                        <input class="form-control" id="finalshipping" type="text" readonly>
+                    </div>
+                </div>
+                <div class="payment">
+                    <span class="title">Payment:</span>
+                    <div class="payment_reviewed">
+                        <input class="form-control" id="paymentconfirmed" type="text" value="Please confirm payment information" readonly>
+                    </div>
+                </div>
+                <div id="complete">
+                    
+                    <button type="button" class="btn btn-sample btn-lg" data-toggle="modal" data-target="#orderComplete">Complete Order</button>
+                    <span class="sub">By selecting this button you agree to the purchase and subsequent payment for this order.</span>
+                </div>
 
-    </body>
+
+                <!-- Order Complete -->
+                <div class="container">
+                    <!-- Modal -->
+                    <div class="modal fade" id="orderComplete" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Order Complete</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Thank you for your order!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href='@Url.Action("About","Home")'><button type="button" class="btn btn-default">Back</button></a>
+</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Order Complete -->
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm Payment -->
+    <script>
+        function confirmPayment() {
+            var confirmed = "Confirmed!";
+            paymentconfirmed.value = confirmed;
+        }
+
+    </script>
+
+    <!-- Pass Personal Info Variables to Confirmation -->
+    <script>
+        function passInfo() {
+            var firstname = document.getElementById("first_name").value;
+            var lastname = document.getElementById("last_name").value;
+            var fullname = firstname + " " + lastname;
+            mytext.value = fullname;
+
+            var fulladdress = document.getElementById("address1").value;
+            finaladdress.value = fulladdress;
+
+            var city = document.getElementById("city").value;
+            var state = document.getElementById("state").value;
+            var fullcitystate = city + ", " + state;
+            finalcity.value = fullcitystate;
+
+            var postalcode = document.getElementById("zip").value;
+            finalpostalcode.value = postalcode;
+        }
+    </script>
+
+    <!-- Pass Shipping Method to Confirmation -->
+    <script>
+        function shippingMethod() {
+            var shippingMethod;
+
+            if (document.getElementById("StandardShipping").checked)
+            {
+                shippingMethod = "Standard Shipping";
+            }
+            if (document.getElementById("ExpressShipping").checked)
+            {
+                shippingMethod = "Express Shipping";
+            }
+            if (document.getElementById("OvernightShipping").checked)
+            {
+                shippingMethod = "Overnight Shipping";
+            }
+
+            finalshipping.value = shippingMethod;
+        }
+    </script>
+
+    <!-- Calculations -->
+    <script>
+        var price = (sessionStorage.getItem("price"));
+        document.getElementById("cart").value = price;
+        function myFunction(browser) {
+            document.getElementById("result").value = browser;
+        }
+        function myOtherFunction() {
+            document.getElementById("calculatedresult").value = "$" + (parseFloat(price) + parseFloat(document.getElementById("result").value) + parseFloat(document.getElementById("taxresult").value)).toFixed(2);
+        }
+        function myThirdFunction(cart) {
+            document.getElementById("subresult").value = cart;
+        }
+        function aFunctionByMe() {
+            document.getElementById("taxresult").value = (price * 0.13).toFixed(2);
+        }
+        window.onload = aFunctionByMe;
+    </script>
+
+    <div style="visibility:hidden">
+        <input id="calculate" type="button" onclick="myOtherFunction()" />
+    </div>
+</body>
