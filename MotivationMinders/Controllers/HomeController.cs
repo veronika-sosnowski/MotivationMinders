@@ -59,6 +59,7 @@ namespace MotivationMinders.Controllers
         {
             return View();
         }
+        //[Authorize]
         public ActionResult FAQ()
         {
             return View();
