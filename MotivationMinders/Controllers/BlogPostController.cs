@@ -17,7 +17,7 @@ namespace MotivationMinders.Controllers
         // GET: BlogPost
         public ActionResult Index()
         {
-            return View(db.BlogPosts.ToList());
+            return View(db.BlogPosts.OrderBy(a => a.datePublished).ToList());
         }
 
         // GET: BlogPost/Details/5

@@ -10,37 +10,22 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            Date Published
-        </th>
-        <th>
-            Post Title
-        </th>
-        <th>
-            Blog Post
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.datePublished)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.postTitle)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.text)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.postID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.postID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.postID })
-        </td>
-    </tr>
+<hr />
+@foreach (var item in Model)
+{
+    <h3>@Html.DisplayFor(modelItem => item.postTitle)</h3>
+    <p>Date published: </p>@Html.DisplayFor(modelItem => item.datePublished)
+    <hr />
+    @Html.DisplayFor(modelItem => item.text)
+    <hr />
+    <a href='@Url.Action("Edit", new { id=item.postID })'>
+        <button class="btn btn-sm btn-info">Edit</button>
+    </a>
+    <a href='@Url.Action("Details", new { id=item.postID })'>
+        <button class="btn btn-sm btn-info">Details</button>
+    </a>
+    <a href='@Url.Action("Delete", new { id = item.postID })'>
+        <button class="btn btn-sm btn-info">Delete</button>
+    </a>
+    <hr />
 }
-
-</table>
