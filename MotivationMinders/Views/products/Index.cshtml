@@ -4,14 +4,14 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@if(Roles.IsUserInRole("Admin"))
-{
 <h2>Index</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 
+@if(Roles.IsUserInRole("Admin"))
+{
 <div>
 
     <!-- Creates Search Form -->
@@ -75,7 +75,9 @@
 }
 
 </table>
+
 }
-<p>This is for admins only.</p>
-
-
+else
+{ 
+    <P> This is an admin only page! </P>
+}

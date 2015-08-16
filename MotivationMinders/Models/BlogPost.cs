@@ -18,8 +18,11 @@ namespace MotivationMinders.Models
         public int postID { get; set; }
 
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
+        [Required]
         public System.DateTime datePublished { get; set; }
+        [Required]
         public string postTitle { get; set; }
+        [Required]
         public string text { get; set; }
     }
 }

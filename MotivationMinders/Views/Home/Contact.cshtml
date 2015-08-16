@@ -2,21 +2,16 @@
     ViewBag.Title = "Contact";
 }
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
 <address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
+    <p>
+    This project is primarily a redesign of a previously built site. It uses ASP.Net instead of the previously used WordPress to give more control over the site. <br /><br />
+    This was done as a Capstone project and is currently not ready for a full production release.<br /> <br />
+    To see the old website and to learn more about the client, please click the links below.
+        </p>
 </address>
 
 <address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    <strong>Currently active site:</strong> <a href="http://motivationminders.com/">Motivation Minders</a><br />
+    <strong>Clients personal page:</strong> <a href="http://www.kellylovell.com/">Kelly Lovell</a>
 </address>
-
-@if (Roles.IsUserInRole("admin"))
-{
-    <p>this is supper protected information</p>
-}
